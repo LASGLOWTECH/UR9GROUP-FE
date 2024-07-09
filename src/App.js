@@ -1,0 +1,126 @@
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TawkToWidget from './components/tawkit';
+import './App.css';
+
+import Ur9Lin from './pages/ur9lin';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Home from './pages/Home';
+import About from './pages/About'
+import Team from './pages/Team';
+import Partners from './pages/partners';
+import ContactUs from './pages/Contact';
+import Footer from './components/Footer';
+import Projects from './pages/Project';
+
+import Blog from './pages/Blog';
+// import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import Prodetails from './pages/prodetails';
+import FullBlogs from './components/fullblogs';
+import Privacy from './pages/privacypol';
+import Ethics from './pages/Ethics';
+import Failurepage from './failure'
+import ScrollTop from './components/scroll';
+// import Popup from './components/popup';
+import Services from './pages/Ourbusiness';
+import Sustainability from './pages/sustainability';
+import Createblog from './components/createblog';
+function App() {
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true);
+
+
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 500);
+
+
+
+
+  }, [])
+
+  return (
+
+    <div className="App ">
+      {loading ? <div className='load-val bg-dark 
+     d-flex flex-column justify-content-center align-items-center'
+        style={{ height: '100vh', width: '100%' }}>
+
+        <img src='/hem.png' className="load-img" alt='hem' style={{ height: '100px', width: '100px' }}></img>
+
+        <p className='text-light fs-6 fw-light '>Ur9 group</p></div> :
+
+        <Router>
+
+          <div>
+            {/* <Popup /> */}
+
+            <Navbar />
+
+            <div className='items '>
+              <Switch>
+                <Route exact path="/"> <Home /></Route>
+                <Route path="/About"> <About />  </Route>
+                <Route path="/Team"> <Team /> </Route>
+                <Route path="/Ourbusiness"> <Services /> </Route>
+                <Route path="/partners"> <Partners /> </Route>
+                <Route path="/Contact"> <ContactUs />  </Route>
+                <Route path="/Project"> <Projects />  </Route>
+                <Route path="/privacypols"> <Privacy />  </Route>
+                <Route path="/Ethics"> <Ethics />  </Route>
+                <Route path="/Blog"> <Blog />  </Route>
+                {/* <Route path="/blogdetails/:id"> <BlogDetails />  </Route> */}
+                <Route path="/Projectlisting/:id"> <Prodetails /> </Route>
+                <Route path="/fullblogs/:id"> <FullBlogs /> </Route>
+                <Route path="/sustainability"> <Sustainability /> </Route>
+                <Route path="/createblog"> <Createblog /> </Route>
+                <Route path="/ur9lin"> <Ur9Lin/>  </Route>
+                <Route path="*"> <Failurepage /> </Route>
+              
+               
+              </Switch>
+
+
+            </div>
+            <ScrollTop />
+
+            <TawkToWidget />
+            {/* 
+           <FloatingWhatsApp
+              phoneNumber = "08171476946"
+               accountName="Ur9 Group"
+              allowClickAway
+              notificationSound
+              avatar="/hem.png"
+              chatMessage="Thanks for contacting Ur9 group, we are glad to have you here, Interested in any of our properties? kindly send us message"
+            
+           headerColor=" #e3ab13"
+           chatboxClassName='h-auto'
+         statusMessage="Will get back to you shortly"/> */}
+
+            <Footer />
+
+          </div>
+
+        </Router>
+
+
+      }
+
+
+    </div>
+  );
+}
+
+
+
+
+
+
+
+export default App;
+
