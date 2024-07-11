@@ -2,9 +2,9 @@ const Slides = [
 
   
 
-   {backImage:"/condo4.jpg", title: 1 },
+   {backimage:"/condo2.jpg", title: 1 },
   
-   { backImage:"/imperial10.jpg", title:  2},
+   { backimage:"/imperial10.jpg", title:  2},
 
  
 
