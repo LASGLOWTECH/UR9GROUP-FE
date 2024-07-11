@@ -9,7 +9,7 @@ const Buttons = ({ filterItem, setItems, menuItems }) => {
        
         {menuItems.map((Val, id) => {
           return (
-            <div className="btn-group mr-2 pt-2 " role="group">
+            <div className="btn-group mr-2 items-center justify-center pt-2 " role="group">
             <button
               className="btn btn-outline-secondary btn-md mx-2 fw-normal "
               onClick={() => filterItem(Val)}

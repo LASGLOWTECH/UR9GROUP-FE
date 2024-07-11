@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row';
 import Details from "../components/Details";
-import Slides from '../components/Herolist';
+import Homesliders from '../components/Homesliders';
 import AboutHero from '../components/Aboutlist';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
@@ -20,17 +20,17 @@ const Home = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     // hero slides
-    const Sliders = {
-        backgroundImage: `url(${Slides[currentIndex].backimage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: "100vh ",
-        width: "100%",
+    // const Sliders = {
+    //     backgroundImage: `url(${Slides[currentIndex].backimage})`,
+    //     backgroundSize: "cover",
+    //     backgroundPosition: "center",
+    //     backgroundRepeat: "no-repeat",
+    //     height: "100vh ",
+    //     width: "100%",
         // // clipPath: "ellipse(100% 40% at 50% 40%)",
         // clipPath:"polygon(0 1%, 99% 0, 0% 100%)"
 
-    }
+    
 
 
     // About Slides
@@ -47,12 +47,12 @@ const Home = () => {
 
 
 
-    // Hero SLIDER Images
-    const handlePrevious = () => {
-        const firstSlide = currentIndex === 0;
-        const newIndex = firstSlide ? Slides.length - 1 : currentIndex - 1
-        setCurrentIndex(newIndex)
-    }
+    // // Hero SLIDER Images
+    // const handlePrevious = () => {
+    //     const firstSlide = currentIndex === 0;
+    //     const newIndex = firstSlide ? Slides.length - 1 : currentIndex - 1
+    //     setCurrentIndex(newIndex)
+    // }
 
 
     // ABOUT HERO
@@ -72,13 +72,13 @@ const Home = () => {
 
     }, []);
 
-    const handleNext = () => {
+    // const handleNext = () => {
 
-        const lastSlide = currentIndex === Slides.length - 1;
-        const newIndex = lastSlide ? 0 : currentIndex + 1
-        setCurrentIndex(
-            newIndex)
-    }
+    //     const lastSlide = currentIndex === Slides.length - 1;
+    //     const newIndex = lastSlide ? 0 : currentIndex + 1
+    //     setCurrentIndex(
+    //         newIndex)
+    // }
 
     const handleNext2 = () => {
 
@@ -92,7 +92,7 @@ const Home = () => {
     // }, 15 * 1000);
 
     setTimeout(() => {
-        handleNext()
+        
         handleNext2()
     }, 20 * 1000);
 
@@ -115,10 +115,10 @@ const Home = () => {
 
 
             <div className=" Hero-secton" >
-
+<Homesliders/>
                 {/* <Popup/> */}
 
-                <div className="  h-sec py-5 " style={Sliders} >
+                {/* <div className="  h-sec py-5 " style={Sliders} >
                     <Container className='px-4'>
                         <div className=" d-flex pt-5 align-items-baseline justify-content-end ">
                             <img src="/UI.png" alt="logo " className="pt-4 " style={{ width: "80px" }}></img>
@@ -142,7 +142,7 @@ const Home = () => {
 
                     </Container>
 
-                </div>
+                </div> */}
 
 
 

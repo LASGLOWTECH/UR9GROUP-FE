@@ -30,11 +30,10 @@ const TeamList = [
         Name: "Sandra Udeji",
         icon: "fas fa-star",
         Position: "Human Resource Manager(HR)",
-        About: "Miss Sandra Udeji is the Human Resource Administrator at UR9. She is a graduate of Godfrey Okoye with" +
-            "a degree in Bio-Technology. She worked as a Human Resource Assistant at the National Office for " + 
-            "Technology Acquisition and Promotion.She has three (3) certifications in Human Resource Management, Human Resource Diploma and Project"  +
-            "Management. All these acquired certifications gave her the most valuable experiences and insights in being " +
-            "the Human Resource Administrator as well as the ability to manage all facets of Human Resources."
+        About: "Miss Sandra Udeji is a highly experienced and accomplished Human Resource professional and Operations Manager at UR9, holding a degree in Bio-Technology from Godfrey Okoye" +
+ " University and boasting an impressive track record as a Human Resource Assistant at the National Office for Technology Acquisition and Promotion. With three certifications in Human" +
+"  Resource Management, Human Resource Diploma, and Project Management, Sandra brings a unique blend of strategic insight, operational expertise, and leadership acumen to her role," +
+"skillfully managing all aspects of Human Resources and overseeing the overall operations of the company with precision and finesse, driving efficiency, productivity, and success at UR9."
 
     },
 
@@ -47,6 +46,46 @@ const TeamList = [
         icon: "fas fa-star",
         Position: "Head of Construction",
         About: "Engr. Abdulmalik Mustafa is the Head of Construction at UR9. He is a graduate of Engineering  from the prestigious Ahmadu Bello University, Zaria. After training as an Aircraft Technician  with the Nigerian College of Aviation Technology (NCAT), he joined the real estate industry as  an Engineer with a handful of real estate companies. Also a certified Project Manager and Programmer, he has worked on several successful projects  spanning across property development and web development before assuming his position at UR9  Group.  He is a charismatic and efficient team leader with a keen eye for detail"
+
+    },
+
+
+    {
+
+        Avatar: "/Admin5.png",
+        Name: "Adeka Solomon",
+        icon: "fas fa-star",
+        Position: "Head Brand & Media",
+        About: "Adeka Solomon is a dynamic, results-driven executive with years of broad-based, progressive" +
+"experience in Marketing, Sales, Branding, and Product Management. " +
+"An effective combination of creative and analytical leadership skills that drive revenue, and " +
+"increase profit margins and shareholder and Brand value. " +
+"Adept at developing and maintaining strategic partnerships to advance brand awareness, " +
+"product acquisition, and customer loyalty. A results-oriented and well-rounded leader with " +
+"creative approaches to resolving complex issues. Helping brands and businesses speak to the "  +
+"world through big ideas to captivate big audiences."
+
+
+    },
+
+
+
+    
+    {
+
+        Avatar: "/Admin5.png",
+        Name: "Shimaor Dowgo Avadoo",
+        icon: "fas fa-star",
+        Position: "Site Manager and Estate surveyor",
+        About: "Adeka Solomon is a dynamic, results-driven executive with years of broad-based, progressive" +
+"experience in Marketing, Sales, Branding, and Product Management. " +
+"An effective combination of creative and analytical leadership skills that drive revenue, and " +
+"increase profit margins and shareholder and Brand value. " +
+"Adept at developing and maintaining strategic partnerships to advance brand awareness, " +
+"product acquisition, and customer loyalty. A results-oriented and well-rounded leader with " +
+"creative approaches to resolving complex issues. Helping brands and businesses speak to the "  +
+"world through big ideas to captivate big audiences."
+
 
     },
 

@@ -2,11 +2,15 @@ const Slides = [
 
   
 
-   {backimage:"/condo2.jpg", title: 1 },
+   { imageUr: "/impflyer.jpg", title: 'IMPERIALE RESIDENCE', text:'Where Luxury Meets Excellence' },
+   { imageUr: "/condo2.jpg", title: 'EPITOME OF LUXURY', text:'30 Floors Luxury  condomonium , CBD Abuja' },
+   { imageUr: "/imperial11.jpg", title: 'IMPERIALE HOTEL', text:'TALLEST HIGH RISE BUILDING IN ABUJA SKYLINE'+
+   ''
+   },
   
-   { backimage:"/imperial10.jpg", title:  2},
 
- 
+   
+      
 
 
 ]

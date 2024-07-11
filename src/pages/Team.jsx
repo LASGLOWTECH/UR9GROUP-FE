@@ -14,8 +14,7 @@ const Team = () => {
         <title>Meet the Team</title>
         <meta
          name="description"
-      content="We are team of experts united by one goal.
-To provide excellent and quality services in our areas of operation.."/>
+      content="We are a team of experts dedicated to providing exceptional and high-quality services in all our areas of operation."/>
 
         <link rel="canonical" href="/Team" />
       </Helmet>

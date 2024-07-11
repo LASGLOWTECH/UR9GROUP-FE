@@ -1,7 +1,65 @@
 const Projectlisting = [
-
     {
         id: 1,
+        pics: [
+            "/condo2.jpg",
+            "/condo1.jpg",
+            "/condo3.jpg",
+            "/condo4.jpg",
+            "/condo6.jpg",
+
+
+
+
+
+
+        ],
+        Residence: "IMPERIALE  RESIDENCE",
+        Area: "-",
+        Logo: "/IMPERIAL.png",
+        Price: "+",
+        Features1: " 30 STOREY CONDOMINIUM",
+        Address: "CBD, Abuja",
+        Features2: "30 STOREY CONDOMINIUM. ARCHITECTURE:Water Fountain, 2-Rooftop Heli-Pads, Over 100 SuperLuxury Condos, Tallest Residential & , Mix-Use Building in Abuja with 30-Storeys. SECURITY: Automatic Vehicle , Barrier System, 50+ Advanced Cctv , Cameras On-Site, Card-Enabled Access , Control For All Area. Services:ATM, Restaurants, Facility Room, Business Center, Hair & Beauty Salon, Laundry / Dry , Cleaning, Fast-Fibre Internet, Services, Fully Serviced Facility , Office, Meeting & Conference , Rooms, 24-hour Concierge and  Maintenance Services. INTERIORS:Fire Alarm, Smoke Detectors, Integrated Wardrobes, Fully Marbled, Flooring, Landscaped, Surroundings, Automated Water , Sprinklers, Daikin VRV AirConditioning, High-Speed Schindler, Elevators, Smart Lighting , Control System, Top-Range Miele , Kitchen Appliances, Sound-Insulating &, Shatter-Proof Glas. AMENITIES:Play Garden, Imax Cinema, Fitness Centre, Indoor Infiniti Pool, Indoor Sporting Facilities, Luxurious Spa, Steam & , Sauna Facilities, Residents-Only 5-Star , Restaurant & Lounge, High Speed Residential & Service Elevators, Games Room (Pool , Table, Arcade, Table , Football, Table Tennis), Luxurious Grand , Interactive 3-Floor World , Class Lobby with an Aquarium Shatter-Proof Glass",
+        Features3: " ",
+        Place: "CBD"
+
+    },
+
+
+
+    
+    {
+        id: 2,
+        pics: ["/imperial1.jpg",
+            "/imperial2.jpg",
+            "/imperial3.jpg",
+            "/imperial4.jpg",
+            "/imperial5.jpg",
+            "/imperial6.jpg",
+            "/imperial7.jpg",
+            "/imperial8.jpg",
+            "/imperial9.jpg",
+            "/imperial10.jpg",
+            "/imperial11.jpg",
+        ],
+        Residence: "IMPERIALE HOTEL",
+        Area: "-m",
+        Logo: "/Bahamas.png",
+        Price: "N",
+        Features1: " ",
+        Address: "CBD , Abuja ",
+        Features2: "Imperial condo residenetial complex ",
+        Features3: "24+ floors condomonium ",
+        Place: "CBD"
+
+    },
+
+
+
+    
+    {
+        id: 3,
         pics: ["/E2.jpg",
             "/E3.jpg",
             "/E8.jpg",
@@ -30,7 +88,7 @@ const Projectlisting = [
 
 
     {
-        id: 2,
+        id: 4,
         pics: ["/Cayman1a.jpg",
 
             "/Cayman1b.jpg",
@@ -54,7 +112,7 @@ const Projectlisting = [
 
 
     {
-        id: 3,
+        id: 5,
         pics: ["/CAY1.jpg",
             "/CAY2.jpg",
             "/CAY3.jpg",
@@ -79,7 +137,7 @@ const Projectlisting = [
 
 
     {
-        id: 4,
+        id: 6,
         pics: ["/AS1.jpg",
             "/AS2.jpg",
             "/AS3.jpg",
@@ -101,7 +159,7 @@ const Projectlisting = [
     },
 
     {
-        id: 5,
+        id: 7,
         pics: ["/Marshallres3b.png",
             "/Marshallres2b.jpeg",
             "/Marshallres4b.png",
@@ -122,7 +180,7 @@ const Projectlisting = [
 
 
     {
-        id: 6,
+        id: 8,
         pics: ["/Bali1.jpg",
             "/Bali2.jpg",
             "/Bali3.jpg",
@@ -144,29 +202,9 @@ const Projectlisting = [
     },
 
 
+   
     {
-        id: 7,
-        pics: ["/Sardinal1.jpg",
-            "/Sardinal2.jpg",
-            "/Sardinal3.jpg",
-            "/Sardinal4.jpg",
-
-
-        ],
-        Residence: "SARDINA RESIDENCE",
-        Area: "-m",
-        Logo: "/SARDINAL.png",
-        Price: "N90M",
-        Features1: "Commercial Complex and Residential ",
-        Address: " Life Camp, FCDA Mass Housing, Abuja ",
-        Features2: "Residences and buildings in Sardinia are recognized for their unique architectural designs that masterfully meld creativity, beauty, and efficiency. The artistic brilliance of well-known architects and interior designers is frequently on display in these architectural wonders. Magnificent mansions show incomparable grandeur and timeless grace, for instance. These enormous mansions have exquisite craftsmanship, large gardens, and a plethora of opulent facilities including private swimming pools, home theatres, wine cellars, and cutting-edge security systems. ",
-        Features3: " 4 ",
-        Place: "Life Camp"
-
-    },
-
-    {
-        id: 8,
+        id: 9,
         pics: [
             "/Sardinal2.jpg",
             "/Sardinal3.jpg",
@@ -186,47 +224,12 @@ const Projectlisting = [
 
     },
 
+
     {
         id: 9,
-        pics: ["/imperial1.jpg",
-            "/imperial2.jpg",
-            "/imperial3.jpg",
-            "/imperial4.jpg",
-            "/imperial5.jpg",
-            "/imperial6.jpg",
-            "/imperial7.jpg",
-            "/imperial8.jpg",
-            "/imperial9.jpg",
-            "/imperial10.jpg",
-            "/imperial11.jpg",
-
-
-
-
-
-        ],
-        Residence: "BAHAMAS RESIDENCE",
-        Area: "-m",
-        Logo: "/Bahamas.png",
-        Price: "N--",
-        Features1: " ",
-        Address: " Asokoro, Abuja ",
-        Features2: "Imperial condo residenetial complex ",
-        Features3: "24+ floors condomonium ",
-        Place: "Asokoro"
-
-    },
-
-
-
-
-    {
-        id: 10,
         pics: ["/Palawa1.png",
             "/Palawa2.png",
             "/Palawa3.png",
-
-
 
 
 
@@ -244,32 +247,7 @@ const Projectlisting = [
 
     },
 
-    {
-        id: 11,
-        pics: [
-            "/condo1.jpg",
-            "/condo2.jpg",
-            "/condo3.jpg",
-            "/condo4.jpg",
-            "/condo6.jpg",
-
-
-
-
-
-
-        ],
-        Residence: "IMPERIAL  RESIDENCE",
-        Area: "-",
-        Logo: "/IMPERIAL.png",
-        Price: "+",
-        Features1: " 30 STOREY CONDOMINIUM",
-        Address: "CBD, Abuja",
-        Features2: "30 STOREY CONDOMINIUM. ARCHITECTURE:Water Fountain, 2-Rooftop Heli-Pads, Over 100 SuperLuxury Condos, Tallest Residential & , Mix-Use Building in Abuja with 30-Storeys. SECURITY: Automatic Vehicle , Barrier System, 50+ Advanced Cctv , Cameras On-Site, Card-Enabled Access , Control For All Area. Services:ATM, Restaurants, Facility Room, Business Center, Hair & Beauty Salon, Laundry / Dry , Cleaning, Fast-Fibre Internet, Services, Fully Serviced Facility , Office, Meeting & Conference , Rooms, 24-hour Concierge and  Maintenance Services. INTERIORS:Fire Alarm, Smoke Detectors, Integrated Wardrobes, Fully Marbled, Flooring, Landscaped, Surroundings, Automated Water , Sprinklers, Daikin VRV AirConditioning, High-Speed Schindler, Elevators, Smart Lighting , Control System, Top-Range Miele , Kitchen Appliances, Sound-Insulating &, Shatter-Proof Glas. AMENITIES:Play Garden, Imax Cinema, Fitness Centre, Indoor Infiniti Pool, Indoor Sporting Facilities, Luxurious Spa, Steam & , Sauna Facilities, Residents-Only 5-Star , Restaurant & Lounge, High Speed Residential & Service Elevators, Games Room (Pool , Table, Arcade, Table , Football, Table Tennis), Luxurious Grand , Interactive 3-Floor World , Class Lobby with an Aquarium Shatter-Proof Glass",
-        Features3: " ",
-        Place: "CBD, Abuja"
-
-    },
+   
 
 
 

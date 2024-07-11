@@ -3,7 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Col, Row } from 'react-bootstrap';
 import Slideshow from '../components/urslides';
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -44,24 +44,24 @@ const Ur9Lin = () => {
 
   return (
     <>
- <Helmet>
+      <Helmet>
         <title>Ur9 LIN</title>
         <meta
-         name="description"
-      content="UR9 Leadership Insight Network is an exclusive community dedicated to nurturing leadership excellence across diverse industries and sectors."/>
+          name="description"
+          content="UR9 Leadership Insight Network is an exclusive community dedicated to nurturing leadership excellence across diverse industries and sectors." />
 
         <link rel="canonical" href="/ur9lin" />
       </Helmet>
 
       <Carousel responsive={responsive}
         customTransition="all .5s"
-        transitionDuration={2000}
+        transitionDuration={3000}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={2000}
 
       >
 
@@ -70,41 +70,50 @@ const Ur9Lin = () => {
           return (
 
 
-<div className="z-index:-50">
-
-  
-<Row className=''>
-{/* <Col lg={6} md={6}>  </Col>    */}
+            <div className="z-index:-50">
 
 
-<p className=''>We are Here</p>
-              </Row>
-<div className='' key={index} data-aos-duration="1500" data-aos="fade-down-right"
-              style=
-              {{ zIndex:"-999",
-                backgroundImage: `url(${creative.imageUr})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                height: "100vh ",
-                width: "100%",
-               
-             
-              }}>
+          
+              <div className=''
+                key={index}
+                data-aos-duration="1500"
+                data-aos="fade-down-right"
+                style=
+                {{
+                  zIndex: "-999",
+                  backgroundImage: `url(${creative.imageUr})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  height: "100vh ",
+                  width: "100%",
 
-              <div className='backdrop '>
-                <div className='w-100 mb-2 rounded-medium  h-4 bg-warning' data-aos="slide-right" />
-                <h1 className='lin-h1 fs-1  text-center fw-semibold text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.title}</h1>
-                <p className=' textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">{creative.text}</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWf3UyMJfZAf-oyfrpIxrfq7z1g7BNKhkijrM5Fh3Bhq4-7w/viewform?usp=pp_url" >  <button className='bg-warning px-4  mt-6 py-2 rounded-3   transition duration-500 ease-in-out text-normal ' >Read More</button></a>
-         
+
+                }}>
+                
+
+                <div className='backdrop '>
+
+                <div className="pe-5 pb-5 d-flex  align-self-end justify-self-start">
+                            <img src="/UI.png" alt="logo " className="pbS-5" style={{ width: "80px" }}></img>
+                        </div>
+
+
+                  <div className='w-100 mb-2 rounded-medium  h-4 bg-warning' data-aos="slide-right" />
+                  <h1 className='lin-h1 fs-1  text-center fw-semibold text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.title}</h1>
+                  <p className=' textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">{creative.text}</p>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWf3UyMJfZAf-oyfrpIxrfq7z1g7BNKhkijrM5Fh3Bhq4-7w/viewform?usp=pp_url" className='btn btn-warning btn-custom
+            px-4  mt-6 py-2 rounded-2   transition duration-500 ease-in-out text-normal '
+
+                  >Read More</a>
+
+                </div>
+
+
+
               </div>
-
-             
-
             </div>
-</div>
-            
+
 
 
           )

@@ -55,15 +55,7 @@ const Projects = () => {
                         </Col>
 
 
-                        <Col lg={5}  className=" estated mt-5 pt-5     " >
-                            <div className="estate w-100 h ">
-{/* 
-                                 */}
-
-                            </div>
-
-
-                        </Col>
+                        
 
                     </Row>
 
