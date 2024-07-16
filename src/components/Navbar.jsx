@@ -53,7 +53,7 @@ function CONTACTUS() {
 
 
           
-            {/* <Nav.Link href="/Blogs">BLOGS</Nav.Link> */}
+        
           </Nav>
 
         </Navbar.Collapse>
