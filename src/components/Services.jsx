@@ -26,7 +26,7 @@ const Services = [
     {
 
         symbol: "/UR9ASSET.png",
-        sectionimg:"/ur9asseti.jpg",
+        sectionimg:"/ur9lin1.JPG",
         Headertext:"ASSET MANAGEMENT",
         info: "Asset Management",
         Textinfo: "Our wealth of experience in Asset Management is invaluable.Fixed Asset Management, Enterprise  Asset Management are three (3) core areas where our clients areare assured of expertise."

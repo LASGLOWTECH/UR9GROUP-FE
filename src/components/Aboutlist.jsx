@@ -1,10 +1,10 @@
 const AboutHero = [
 
 
-    { imageUr: "/ur9estate.jpg", title: 1 },
-    { imageUr: "/TEAMWORK.jpg", title: 2 },
+    { imageUr: "/Aboutimage.JPG", title: 1 },
+    { imageUr: "/ur9lin6.JPG", title: 2 },
     { imageUr: "/Academy.jpg", title: 3 },
-    { imageUr: "/propp1.jpg", title: 4 },
+    { imageUr: "/ur9lin2.JPG", title: 4 },
  
  ]
  

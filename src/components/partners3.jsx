@@ -9,12 +9,12 @@ const ourPartners = [
       
 },
 
-{
-   id: 2,
- Banklog: "/Chartered.png",
-   BankName: "Standard Chartered Bank",
+// {
+//    id: 2,
+//  Banklog: "/Chartered.png",
+//    BankName: "Standard Chartered Bank",
   
-},
+// },
 {
    id: 3,
  Banklog: "/Fidelity.png",
@@ -22,7 +22,7 @@ const ourPartners = [
   
 },
 {
-   id: 4,
+   id: 3,
  Banklog: "/ZenithBank.png",
    BankName: "Zenith Bank",
   

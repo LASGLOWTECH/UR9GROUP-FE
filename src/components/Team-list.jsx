@@ -2,11 +2,11 @@ const TeamList = [
 
     {
 
-        Avatar: "/Ceo.jpg",
-        Name: "Hon. Uriel Ezeh",
+        Avatar: "/boss.png",
+        Name: "Hon.  Dr. Uriel Ezeh",
         icon: "fas fa-star",
         Position: "Group Managing Director",
-        About: "Hon. Uriel is the Founder and General Managing Director(GMD) of UR9 Group. He obtained valuable work experience from several companies that helped mould him into the   entrepreneur and serial investor that he is today. His wide array of experience, desire for innovation and passion for excellence is a driving factor in his style for leadership. He serves on the Board of Directors of various companies"
+        About: "Hon.  Uriel is the Founder and General Managing Director(GMD) of UR9 Group.  He obtained valuable work experience from several companies that helped mould him into the   entrepreneur and serial investor that he is today. His wide array of experience, desire for innovation and passion for excellence is a driving factor in his style for leadership. He serves on the Board of Directors of various companies"
 
 
 
@@ -17,7 +17,7 @@ const TeamList = [
         Avatar: "/DMD.jpg",
         Name: "Glory Adeniyi",
         icon: "fas fa-star",
-        Position: "Deputy Managing Director(DMD",
+        Position: "Deputy Managing Director(DMD)",
         About: "Miss. Glory C. is the Deputy Managing Director of UR9 Group. She gained valuable leadership as well as administrative experience from her different rolesand those experience as well as her keen eye for detail and ability to see potential business opportunities even before they developed have helped shape her into the business icon she is today."
 
 

@@ -1,7 +1,7 @@
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Col, Row } from 'react-bootstrap';
+// import { Col, Row } from 'react-bootstrap';
 import Slideshow from '../components/urslides';
 import { useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
@@ -94,10 +94,7 @@ const Ur9Lin = () => {
 
                 <div className='backdrop '>
 
-                <div className="pe-5 pb-5 d-flex  align-self-end justify-self-start">
-                            <img src="/UI.png" alt="logo " className="pbS-5" style={{ width: "80px" }}></img>
-                        </div>
-
+                
 
                   <div className='w-100 mb-2 rounded-medium  h-4 bg-warning' data-aos="slide-right" />
                   <h1 className='lin-h1 fs-1  text-center fw-semibold text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.title}</h1>

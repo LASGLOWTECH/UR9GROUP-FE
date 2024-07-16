@@ -37,10 +37,10 @@ const Home = () => {
     const AboutSlides = {
         backgroundImage: `url(${AboutHero[currentIndex].imageUr})`,
 
-        backgroundPosition: "center",
+        backgroundPosition: "cover",
         height: "100vh",
         backgroundSize: "cover",
-        clipPath: "ellipse(100% 40% at 50% 40%)",
+      
         backgroundRepeat: "no-repeat"
     }
 
@@ -155,7 +155,7 @@ const Home = () => {
                                 <div className='  mx-auto  rounded-5    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
 
-                                <div className="  "><p className=" P-text value-text mx-auto fs-6  text-center   " > We are your one-stop destination for premium homes, exquisite vodka, and sustainable construction. Our core values help us to provide our clients
+                                <div className="  "><p className="   textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal mx-auto " > We are your one-stop destination for premium homes, exquisite vodka, and sustainable construction. Our core values help us to provide our clients
                                     with the best possible experience</p></div>
 
                             </div>
@@ -197,7 +197,7 @@ const Home = () => {
                         <div className='pt-5 ' data-aos="slide-right">
                             <h3 className=' one pt-3 pb display-7 text-left '>Our Businesses</h3>
                             <div className='    rounded-5    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
-                            <h3 className='text-dark pb-5 display-6 fw-medium '>We operate across various Sectors</h3>
+                            <h3 className='text-dark pb-5 display-6 fw-bold fs-1 '>We operate across various Sectors</h3>
 
                         </div>
 
@@ -235,10 +235,10 @@ const Home = () => {
 
 
                             <Col lg={6} md={6} >
-                                <div className='py-4 it bg-dark d-flex flex-row px-3 opacity-75  align-items-center flex-column rounded-5  mx-auto ' data-aos="slide-up">
+                                <div className='py-4 h-100 it bg-black d-flex flex-row px-3 opacity-75  align-items-center flex-column rounded-2  mx-auto ' data-aos="slide-up">
                                     <div className='    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
-                                    <h3 className='fw-bold text-light display-7 text-center '>A Diversified and fully Integrated Conglomerate</h3>
+                                    <h2 className='fw-bold text-light display-7 text-center '>A Diversified and fully Integrated Conglomerate</h2>
                                     <p className="pt-3 prop-text1  text-center fw-light  text-light"> UR9 GROUP is a diversified and fully integrated conglomerate registered with the Corporate Affairs Commission and under the laws of The Federal Republic of Nigeria . We have vibrant operations in Nigeria across a wide range of sectors including Energy, Beverage, Real Estate, Agriculture, Technologies.</p>
 
                                     <Button variant='warning' className='mb-5'><a className="    " style={{ textDecoration: 'none', color: 'black' }} href="/About">Learn More</a></Button>
@@ -280,7 +280,7 @@ const Home = () => {
 
                     <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
                         style={{
-                            backgroundImage: "url(/Academy.jpg)",
+                            backgroundImage: "url(/Palawa2.PNG)",
                             backgroundPosition: "center",
                             height: "100vh",
                             backgroundSize: "cover",
@@ -331,18 +331,19 @@ const Home = () => {
 
                                         data-aos="fade-out"
                                         style={{
-                                            backgroundImage: "url(/blogpost.jpg)",
+                                            backgroundImage: "url(/Marsh4.JPG)",
                                             height: "80vh",
                                             borderTopLeftRadius: "50px",
                                             borderBottomRightRadius: "50px",
                                         }}>
 
-                                        <h3 className='P-text rounded-3 text-dark pt-1 px-2 bg-warning fs-4 fw-medium'>UR9 Updates</h3>
+                                        <h3 className='P-text rounded-4 text-dark pt-1 px-2 bg-warning fs-4 fw-bold'>UR9 Updates</h3>
 
 
-                                        <h3 className='display-6 text-light px-4  text-center '>
-                                            Actively Selling
-                                        </h3>
+
+                                        <h4 className=' text-light px-4  text-center '>
+                                           Our Latest Updates
+                                        </h4>
 
 
 

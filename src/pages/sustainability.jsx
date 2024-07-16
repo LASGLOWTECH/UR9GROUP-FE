@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/Container";
-import Row from 'react-bootstrap/Row';
-import { Col } from 'react-bootstrap';
+// import Row from 'react-bootstrap/Row';
+// import { Col } from 'react-bootstrap';
 import Sustainabel from "../components/sustainable";
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
-
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -56,11 +56,11 @@ const Sustainability = () => {
             <div className=" d-flex align-items-center justify-content-base h-sec py-5  " style={{ backgroundImage: "url(/Sardinal3.jpg)", backgroundRepeat: "no-repeat", height: "80vh", backgroundSize: "cover" }}  >
                 <Container className='px-4'>
                    
-                    <div className="contents mt-5  d-flex align-items-center justify-content-start ">
-                        <div className="">
+                    <div className="contents mt-5  ">
+                        <div className=" d-flex flex-column align-items-center justify-content-center">
                             <h1 className=" Hero-text  fw-bolder pt-1 text-white display-5    text-uppercase">SUSTAINABILITY </h1>
-                            <p className=" P-text   mt-3 text-light  fs-5"> Our strives is to promote echo friendly environment.  </p>
-                            <div className='    rounded-5    -mt-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
+                            <p className=" P-text   mt-1 text-light  fs-5"> Our strives is to promote echo friendly environment.  </p>
+                            <div className='    rounded-5    -mt-3 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
 
                             {/* <button id="batton" class=" rounded-3 p-2 mt-3  fw-normal mb-3"><a className=" hero-i  fs-5  " style={{ textDecoration: 'none', color: '' }} href="/About" target="_blank">Explore</a></button> */}
@@ -74,15 +74,22 @@ const Sustainability = () => {
             </div>
 
             
-            <Container className="px-4">
-                <h3 className=" one pt-5 pb display-7  text-left">Our Sustainable development goals centered around,</h3>
-                <div className='    rounded-5    mb-5 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
+            <Container className="px-4  ">
+               <div className="d-flex flex-column align-items-center justify-content-center">
+                <h2 className=" one pt-5 fw-bold display-7 text-wrap  text-left">Our Sustainable development goals centered around,</h2>
+                <div className='    rounded-2  mb-5 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
+                </div>
+              
+            <ResponsiveMasonry
+    columnsCountBreakPoint={{350:1, 750:2, 900:4}} 
+    gutter='5px' >
+  
+   <Masonry>
 
-                <Row>
                     {Sustainabel.map((services, index) => {
                         return (
-                            <Col lg={4} key={index}
-                                className=" py-2"
+                            <div   key={index}
+                                className=" p-1"
                                 style={{ width: "", backgroundColor: "" }}>
 
                                 <div className="d-flex position-relative bg-dark rounded-3 px-4 py-5 flex-column justify-content-between"
@@ -115,11 +122,16 @@ const Sustainability = () => {
                                 </div>
 
 
-                            </Col>
+                            </div>
                         )
                     })}
 
-                </Row>
+</Masonry>
+
+
+    </ResponsiveMasonry>
+
+          
 
             </Container>
 

@@ -35,6 +35,7 @@ body {
 .prop-text {
   font-family: var(--Poppings);
   font-size: 12px;
+  font-weight: lighter;
 }
 
 .prop-text1 {

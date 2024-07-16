@@ -36,7 +36,7 @@ const Partners = () => {
 
 
 
-            <Row className='my-2 mx-5 py-4 bg-light '  >
+            <Row className=' mx-5 py-4  '  >
 
 
 
