@@ -62,7 +62,7 @@ const Ceo = () => {
                                         }}>
 
 
-<img className="icon-im bg-dark  me-3 mt-3 " src="/boss.PNG" alt="ceo" style={{ width: '350px', height: '350px',   borderTopRightRadius: "50px", }} ></img>
+<img className="icon-im bg-dark  me-2 mt-2  W-AUTO" src="/boss.png" alt="ceo" style={{ width: '300px', height: '300px',   borderTopRightRadius: "50px", }} ></img>
 </div>
                     </div>
 

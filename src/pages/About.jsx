@@ -115,7 +115,7 @@ const About = () => {
     
     <Col lg={6}  className="  " >
                         <div className="   bg-dark text-left vision-section" data-aos="zoom-in-up">
-                        <h3 className="one text-light pb display-7 pt-4 text-left">Our  Mision</h3>
+                        <h3 className="one text-light pb display-7 pt-4 text-left">Our  Mission</h3>
                 <div className='    rounded-5    ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
     
 

@@ -44,7 +44,7 @@ const Uriel = () => {
                                 <ul className='bullet-list'>
                                     <li> Transparency Africa Honour Award by Transparency Africa.</li>
                                     <li>  Epitome of Hope by The Democratic Youth Assembly of Nigeria <span className='text-warning fw-bold'>(DYAN)</span>.</li>
-                                    <li> Excellence Awards as Entrepreneur of the Year by The Top10 Magazine.</li>
+                                    <li> Excellence Awards as Entrepreneur of the Year by The Top 10 Magazine.</li>
                                     <li>Award for Excellence by The Nigerian Women Progressive Alliance <span className='text-warning fw-bold'>(NIWOPA).</span>.</li>
                                     <li>Julius Nyerere Leadership Prize by The Young African Professionals & Entrepreneurs .<span className='text-warning fw-bold'>(YAPE).</span>.</li>
                                     <li>Icon of Women Development by The National Youth for Women Empowerment and Education in Nigeria</li>

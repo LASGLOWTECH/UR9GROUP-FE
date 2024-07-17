@@ -52,7 +52,7 @@ const Services = [
         sectionimg:"/ur9consti.jpg",
         symbol: "/UR9CONST.png",
         info: "Construction",
-        Textinfo: " UR9 Construction Ltd is a Design, Development & Construction Company and a member of the UR9 GROUP, UR9 Construction undertakes design, building and construction projects for Individuals, Private and Public Institutions and other Corporate Bodies as well as exceptional supervision of projects. UR9 Construction builds quality residential and commercial structures with great attention to functionality, space flow efficiency, structural stability, facade and finishing details. UR9 Construction is focused on revolutionizing the integration of Technology, Automation and Innovative Designs (T.A.LD) into residential and commercial real estate using sustainable techniques. We place great emphasis on Prime Luxury, Elegance and Excellence for all our projects.",
+        Textinfo: " UR9 Construction Ltd is a Design, Development & Construction Company and a member of the UR9 GROUP, UR9 Construction undertakes design, building and construction projects for Individuals, Private and Public Institutions and other Corporate Bodies as well as exceptional supervision of projects. UR9 Construction builds quality residential and commercial structures with great attention to functionality, space flow efficiency, structural stability, facade and finishing details. UR9 Construction is focused on revolutionizing the integration of Technology, Automation and Innovative Designs (T.A.I.D) into residential and commercial real estate using sustainable techniques. We place great emphasis on Prime Luxury, Elegance and Excellence for all our projects.",
    link:"/Ourbusiness"
    
     },

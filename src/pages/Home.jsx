@@ -40,7 +40,7 @@ const Home = () => {
         backgroundImage: `url(${AboutHero[currentIndex].imageUr})`,
 
         backgroundPosition: "cover",
-        height: "100vh",
+        height: "auto",
         backgroundSize: "cover",
       
         backgroundRepeat: "no-repeat"
@@ -285,7 +285,7 @@ const Home = () => {
 
                     <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
                         style={{
-                            backgroundImage: "url(/Palawa2.PNG)",
+                            backgroundImage: "url(/Palawa2.png",
                             backgroundPosition: "center",
                             height: "100vh",
                             backgroundSize: "cover",
@@ -336,7 +336,7 @@ const Home = () => {
 
                                         data-aos="fade-out"
                                         style={{
-                                            backgroundImage: "url(/Marsh4.JPG)",
+                                            backgroundImage: "url(/Marsh4.jpg)",
                                             height: "80vh",
                                             borderTopLeftRadius: "50px",
                                             borderBottomRightRadius: "50px",

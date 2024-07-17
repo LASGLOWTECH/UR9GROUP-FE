@@ -14,7 +14,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/DMD.PNG",
+        Avatar: "/DMD.png",
         Name: "Glory Adeniyi",
         icon: "fas fa-star",
         Position: "Deputy Managing Director(DMD)",
