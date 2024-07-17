@@ -14,6 +14,8 @@ import { useEffect, useState } from "react";
 // import Popup from './popup';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Faq from '../components/faqs';
+import Ceo from '../components/ceo';
 
 
 const Home = () => {
@@ -155,7 +157,7 @@ const Home = () => {
                                 <div className='  mx-auto  rounded-5    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
 
-                                <div className="  "><p className="   textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal mx-auto " > We are your one-stop destination for premium homes, exquisite vodka, and sustainable construction. Our core values help us to provide our clients
+                                <div className="  "><p className="   textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal mx-auto " >  Our core values help is to provide our clients
                                     with the best possible experience</p></div>
 
                             </div>
@@ -181,12 +183,15 @@ const Home = () => {
 
                 </div>
 
-
+<Ceo/>
 
                 {/* End of services section */}
 
 
-                {/* About Section */}
+
+
+
+                {/* Services Section*/}
 
                 <div className="About-section " id="About-section" style={{ backgroundColor: '#DADDE4' }} >
 
@@ -235,7 +240,7 @@ const Home = () => {
 
 
                             <Col lg={6} md={6} >
-                                <div className='py-4 h-100 it bg-black d-flex flex-row px-3 opacity-75  align-items-center flex-column rounded-2  mx-auto ' data-aos="slide-up">
+                                <div className='py-4 h-100 it bg-black d-flex flex-row px-3 opacity-75  align-items-center flex-column rounded-2  mx-auto ' >
                                     <div className='    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
                                     <h2 className='fw-bold text-light display-7 text-center '>A Diversified and fully Integrated Conglomerate</h2>
@@ -368,6 +373,12 @@ const Home = () => {
                             </Col>
 
                         </Row>
+<section className=''>
+<Faq/>
+
+</section>
+
+
                     </Container>
                 </section>
 

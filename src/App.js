@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TawkToWidget from './components/tawkit';
 import './App.css';
-
+import Uriel from './pages/Aboutceo';
 import Ur9Lin from './pages/ur9lin';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home';
@@ -64,6 +64,7 @@ function App() {
             <div className='items '>
               <Switch>
                 <Route exact path="/"> <Home /></Route>
+                <Route path="/Aboutceo"> <Uriel/>  </Route>
                 <Route path="/About"> <About />  </Route>
                 <Route path="/Team"> <Team /> </Route>
                 <Route path="/Ourbusiness"> <Services /> </Route>

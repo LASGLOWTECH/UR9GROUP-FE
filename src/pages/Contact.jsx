@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
+import GoogleMap from "../components/Googlemap";
 const ContactUs = () => {
 
 
@@ -55,7 +56,7 @@ const ContactUs = () => {
      
       </Helmet>
                     
-    <div className=" d-flex align-items-center justify-content-base h-sec py-5  " style={{ backgroundImage: "url(/Sardinal1.jpg)", backgroundRepeat: "no-repeat", height: "80vh", backgroundSize: "cover" }}  >
+    <div className=" d-flex align-items-center justify-content-base h-sec py-5  " style={{ backgroundImage: "url(/Sardinal1.jpg)", backgroundRepeat: "no-repeat", height: "100vh", backgroundSize: "cover" }}  >
                 <Container className='px-4'>
                    
                     <div className="contents mt-5  d-flex align-items-center justify-content-base ">
@@ -173,9 +174,15 @@ const ContactUs = () => {
                     
 
                 </Col>
+              
             </Row>
+<div className="container">
 
 
+<h2 className='text-center rounded-3 py-2 mt-5 mx-auto fw-bold  w-75 text-light '>Locate us on the map</h2>
+</div>
+           <GoogleMap/>
+          
         </div>
 
         </div >
