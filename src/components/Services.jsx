@@ -58,7 +58,7 @@ const Services = [
     },
     {
         Headertext:"UR9 TECHNOLOGIES",
-        sectionimg:"/ur9techi.jpg",
+        sectionimg:"/ur9tech1.jpg",
         symbol: "/UR9TECH.png",
         info: "Technology",
         Textinfo: " UR9 Tech is a dynamic technology company dedicated to driving innovation and sustainability in the ever-evolving tech landscape. Our team of skilled professionals specializes in crafting transformative technologies that empower businesses, individuals. We're committed to creating solutions that not only meet today's demands but also sustain businesses for a brighter tomorrow.  UR9 Tech: Pioneering Innovation for Sustainable Success.",

@@ -6,14 +6,13 @@ import './App.css';
 import Uriel from './pages/Aboutceo';
 import Ur9Lin from './pages/ur9lin';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from './pages/Home';
+
 import About from './pages/About'
 import Team from './pages/Team';
 import Partners from './pages/partners';
 import ContactUs from './pages/Contact';
 import Footer from './components/Footer';
-import Projects from './pages/Project';
-
+import React, { lazy, Suspense } from 'react';
 import Blog from './pages/Blog';
 // import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Prodetails from './pages/prodetails';
@@ -26,6 +25,9 @@ import ScrollTop from './components/scroll';
 import Services from './pages/Ourbusiness';
 import Sustainability from './pages/sustainability';
 import Createblog from './components/createblog';
+const Projects = lazy(() => import('./pages/Project'));
+const Home = lazy(() => import('./pages/Home'));
+
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -52,10 +54,10 @@ function App() {
 
         <img src='/hem.png' className="load-img" alt='hem' style={{ height: '100px', width: '100px' }}></img>
 
-        <p className='text-light fs-6 fw-light '>Ur9 group</p></div> :
+        <p className='text-light fs-6 fw-light '>UR9 Group</p></div> :
 
         <Router>
-
+    <Suspense fallback={<div>Loading...</div>}>
           <div>
             {/* <Popup /> */}
 
@@ -63,7 +65,8 @@ function App() {
 
             <div className='items '>
               <Switch>
-                <Route exact path="/"> <Home /></Route>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/"> <Home /></Route>
                 <Route path="/Aboutceo"> <Uriel/>  </Route>
                 <Route path="/About"> <About />  </Route>
                 <Route path="/Team"> <Team /> </Route>
@@ -106,7 +109,7 @@ function App() {
             <Footer />
 
           </div>
-
+          </Suspense>
         </Router>
 
 

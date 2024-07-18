@@ -1,4 +1,4 @@
-
+import LazyLoad from 'react-lazyload'
 import ImageSlider from '../components/carousel';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 import { Button } from 'react-bootstrap';
@@ -39,8 +39,8 @@ const Home = () => {
     const AboutSlides = {
         backgroundImage: `url(${AboutHero[currentIndex].imageUr})`,
 
-        backgroundPosition: "cover",
-        height: "auto",
+        backgroundPosition: "center",
+        height: "100vh",
         backgroundSize: "cover",
       
         backgroundRepeat: "no-repeat"
@@ -116,8 +116,15 @@ const Home = () => {
             </Helmet>
 
 
-            <div className=" Hero-secton" >
-<Homesliders/>
+            <div className=" Hero-secton" >   
+
+            <LazyLoad height={200} offset={100}>
+
+            <Homesliders/>
+
+            </LazyLoad>
+       
+      
                 {/* <Popup/> */}
 
                 {/* <div className="  h-sec py-5 " style={Sliders} >
@@ -183,7 +190,11 @@ const Home = () => {
 
                 </div>
 
-<Ceo/>
+ <LazyLoad height={200} offset={100}>
+
+ <Ceo/>
+
+</LazyLoad>
 
                 {/* End of services section */}
 
@@ -207,7 +218,14 @@ const Home = () => {
                         </div>
 
                     </Container>
+
+
+                    <LazyLoad height={200} offset={100}>
+
                     < ImageSlider />
+
+</LazyLoad>
+                   
 
 
                 </div>
@@ -281,7 +299,10 @@ const Home = () => {
 
                 < section className="uacademy  " >
 
+            <LazyLoad>
 
+                
+            
 
                     <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
                         style={{
@@ -289,7 +310,7 @@ const Home = () => {
                             backgroundPosition: "center",
                             height: "100vh",
                             backgroundSize: "cover",
-                            clipPath: "ellipse(100% 55% at 48% 44%)",
+                            clipPath: "ellipse(100% 70% at 48% 44%)",
                             backgroundRepeat: "no-repeat"
                         }}>
 
@@ -320,7 +341,7 @@ const Home = () => {
 
                     </div>
 
-
+                    </LazyLoad>
                 </section>
                 <section className='py-5 '>
 

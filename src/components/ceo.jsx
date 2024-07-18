@@ -8,7 +8,7 @@ const Ceo = () => {
     return (
         <section className='ceopro'>
             <Container>
-            <Row className=' mx-auto px-5 d-flex align-items-center pt-5 justify-content-center '>
+            <Row className='  px-3 d-flex align-items-center pt-5 justify-content-center '>
             <h4 className='fw-medium text-light text-center mb-3'>Meet the CEO </h4>
 
                 <Col lg={6} md={6} >
@@ -62,7 +62,7 @@ const Ceo = () => {
                                         }}>
 
 
-<img className="icon-im bg-dark  me-2 mt-2  W-AUTO" src="/boss.png" alt="ceo" style={{ width: '300px', height: '300px',   borderTopRightRadius: "50px", }} ></img>
+<img className=" bg-dark  me-2 mt-2  W-AUTO" src="/boss.png" alt="ceo" style={{ width: '400px', height: '400px',   borderTopRightRadius: "50px", }} ></img>
 </div>
                     </div>
 
