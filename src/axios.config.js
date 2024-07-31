@@ -13,7 +13,7 @@ import axios from "axios";
 
 const  API_URL=isLocalhost
 ? "http://localhost:5000"
-: 'http://blog.ur9group.com';
+: 'https://ur9group-be.onrender.com';
 
 
 const instance = axios.create({

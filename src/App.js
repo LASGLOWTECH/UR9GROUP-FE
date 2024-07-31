@@ -21,6 +21,7 @@ import Privacy from './pages/privacypol';
 import Ethics from './pages/Ethics';
 import Failurepage from './failure'
 import ScrollTop from './components/scroll';
+import { RotateLoader } from "react-spinners";
 // import Popup from './components/popup';
 import Services from './pages/Ourbusiness';
 import Sustainability from './pages/sustainability';
@@ -57,7 +58,11 @@ function App() {
         <p className='text-light fs-6 fw-light '>UR9 Group</p></div> :
 
         <Router>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='d-flex flex-column justify-content-center align-items-center vh-100'>
+      
+      
+     
+  <RotateLoader color='#000000b3' loading={loading} size='150'/></div>}>
           <div>
             {/* <Popup /> */}
 

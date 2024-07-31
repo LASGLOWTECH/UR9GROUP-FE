@@ -1,5 +1,5 @@
 {
-    "proxy": "https://blog.ur9group.com",
+    "proxy": "https://ur9group-be.onrender.com",
     "name": "ur9webpageog.ur9group.",
     "version": "0.1.0",
     "private": true,
@@ -28,6 +28,7 @@
         "react-responsive-masonry": "^2.1.7",
         "react-router-dom": "^5.3.4",
         "react-scripts": "5.0.1",
+        "react-spinners": "^0.14.1",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
