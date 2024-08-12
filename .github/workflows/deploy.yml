@@ -1,35 +1,41 @@
-name: Node.js CI
-
+name: 🚀 Shipping Build
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - [YOUR_BRANCH_NAME_THAT_YOU_WANT_TO_PUBLISH]
 jobs:
-  build:
-
+  FTP-Deploy-Action:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-
-    
-    # server: ${{ secrets.FTP_SERVER }}
-    # username: ${{ secrets.FTP_USERNAME }}
-    # password: ${{ secrets.FTP_PASSWORD }}
-    # protocoll: ${{ secrets.FTP_PASSWORD }}
-    # local-dir: ./build/
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.10.0'
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        id: cache-node-modules
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: 🔨 Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: |
+          npm install
+        env:
+         NODE_OPTIONS: "--max_old_space_size=4096"
+         CI: false
+      - name: 🏗 Build Project
+        run: npm run build
+      - name: 📂 Sync folders and files to the server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build
