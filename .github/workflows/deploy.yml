@@ -1,8 +1,12 @@
 name: 🚀 Shipping Build
+
 on:
   push:
-    branches:
-      - [YOUR_BRANCH_NAME_THAT_YOU_WANT_TO_PUBLISH]
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
@@ -10,15 +14,15 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '20.10.0'
+          node-version: [18.x, 20.x, 22.x]
       - name: Cache npm dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: cache-node-modules
         with:
           path: '**/node_modules'
