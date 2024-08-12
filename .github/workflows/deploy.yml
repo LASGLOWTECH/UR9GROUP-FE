@@ -1,4 +1,4 @@
-name: Deploy to cPanel
+name: ur9 deploy
 
 on:
   push:
@@ -6,17 +6,17 @@ on:
 
 jobs:
   deploy:
+    name: 🚀 Deploy website every commit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Build React App
-        run: npm run build
-      - name: Deploy to cPanel
-        uses: appleboy/ssh-action@v0.3.1
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync folders and files to the server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+      
         with:
-          host: ur9group.com
-          username: urgroupc
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            mkdir -p public_html
-            rsync -avz build/ your_username@your_server_ip:/home/your_username/public_html
+         server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./build
