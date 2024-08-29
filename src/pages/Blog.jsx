@@ -71,7 +71,7 @@ const Blogs = () => {
 
 
                                    <div className=' w-ful ' style={{
-                                        backgroundImage: "url(/marshnew.jpg)",
+                                        backgroundImage: "url(/newmarsh.jpg)",
                                         height: "100vh",
                                         
                                         borderBottomRightRadius: "",
