@@ -70,12 +70,12 @@ const Blogs = () => {
                               <div className="col-lg-12 mb-5 P-text">
 
 
-                                   <div className='w-100  d-flex align-items-center flex-column justify-content-center  rounded-l' style={{
-                                        backgroundImage: "url(/blogpost1.jpg)",
+                                   <div className=' w-100' style={{
+                                        backgroundImage: "url(/marshnew.JPG)",
                                         height: "100vh",
-                                        borderTopLeftRadius: "px",
+                                        
                                         borderBottomRightRadius: "",
-                                        backgroundRepeat: "no-repeat",
+                                          backgroundRepeat: "no-repeat",
                                         backgroundSize: "cover",
                                         backgroundPosition: "center"
                                    }}>

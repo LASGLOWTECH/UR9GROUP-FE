@@ -40,9 +40,9 @@ const Home = () => {
         backgroundImage: `url(${AboutHero[currentIndex].imageUr})`,
 
         backgroundPosition: "center",
-        height: "100vh",
+      width:"100%",
         backgroundSize: "cover",
-      
+      marginTop:"70px",
         backgroundRepeat: "no-repeat"
     }
 
@@ -359,11 +359,11 @@ const Home = () => {
                                         style={{
                                             backgroundImage: "url(/Marsh4.jpg)",
                                             height: "80vh",
-                                            borderTopLeftRadius: "50px",
-                                            borderBottomRightRadius: "50px",
+                                            borderTopLeftRadius: "20px",
+                                            borderBottomRightRadius: "20px",
                                         }}>
 
-                                        <h3 className='P-text rounded-4 text-dark pt-1 px-2 bg-warning fs-4 fw-bold'>UR9 Updates</h3>
+                                        <h3 className='P-text rounded-4 text-dark pt-1 px-4 bg-warning fs-4 fw-bold'>UR9 Updates</h3>
 
 
 

@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet-async';
     <Helmet>
         <title>About Us</title>
         <meta name="description" content="UR9 GROUP is a diversified and fully integrated conglomerate registered with the Corporate Affairs Commission and under the laws of The Federal Republic of Nigeria." />
-        <link rel="canonical" href="/About" />
+        <link rel="canonical" href="/failure" />
         <div className=" d-flex align-items-center justify-content-center  flex-column bg-light  py-5 px-5 mt-5">
 
 <h1 className="fw-bold text-dark fs-1 display-5 py-6 ">404</h1>

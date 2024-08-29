@@ -18,15 +18,15 @@ const Uriel = () => {
 
                     <div className='mx-auto px-5 d-flex align-items-center flex-column justify-content-center '>
 
-                    <h2 className='fw-bold text-light text-center mb-3'>CEO Profile </h2>
-                    {/* <h1 className=" fw-bolder display-5 text-center text-warning pt-5  " style={{ color: '' }}> Meet the Team</h1> */}
+                        <h2 className='fw-bold text-light text-center mb-3'><span className="text-warning">CEO </span>Profile </h2>
+
 
                         <div className='py-4'>
 
 
                             <h3 className='fw-bold text-light  '>Hon. Dr. Uriel A. Ezeh (ILM) </h3>
                             <h5 className='fw-bold text-warning  '>CEO UR9 GROUP </h5>
-                            <div className='  mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
+                            {/* <div className='  mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div> */}
                             <p className="py-2 P-text text-light ">
                                 Hon. Dr. Uriel A. Ezeh (ILM) is the Founder and Group Chief Executive Officer of
                                 UR9 GROUP. A multi-talented business tycoon, he has overseen the growth and

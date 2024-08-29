@@ -1,6 +1,6 @@
 {
     "proxy": "https://ur9group-be.onrender.com",
-    "name": "ur9webpageog.ur9group.",
+    "name": "ur9webservice",
     "version": "0.1.0",
     "private": true,
     "homepage": "./",

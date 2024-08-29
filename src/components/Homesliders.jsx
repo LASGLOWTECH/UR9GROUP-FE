@@ -54,6 +54,8 @@ const Homesliders = () => {
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2000}
+                arrows={false}
+                
 
             >
 
