@@ -16,7 +16,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Faq from '../components/faqs';
 import Ceo from '../components/ceo';
-
+import PDFDownload from '../components/mydownload';
 
 const Home = () => {
 
@@ -29,10 +29,10 @@ const Home = () => {
     //     backgroundRepeat: "no-repeat",
     //     height: "100vh ",
     //     width: "100%",
-        // // clipPath: "ellipse(100% 40% at 50% 40%)",
-        // clipPath:"polygon(0 1%, 99% 0, 0% 100%)"
+    // // clipPath: "ellipse(100% 40% at 50% 40%)",
+    // clipPath:"polygon(0 1%, 99% 0, 0% 100%)"
 
-    
+
 
 
     // About Slides
@@ -40,9 +40,9 @@ const Home = () => {
         backgroundImage: `url(${AboutHero[currentIndex].imageUr})`,
 
         backgroundPosition: "center",
-      width:"100%",
+        width: "100%",
         backgroundSize: "cover",
-      marginTop:"70px",
+        marginTop: "70px",
         backgroundRepeat: "no-repeat"
     }
 
@@ -94,7 +94,7 @@ const Home = () => {
     // }, 15 * 1000);
 
     setTimeout(() => {
-        
+
         handleNext2()
     }, 20 * 1000);
 
@@ -116,15 +116,15 @@ const Home = () => {
             </Helmet>
 
 
-            <div className=" Hero-secton" >   
+            <div className=" Hero-secton" >
 
-            <LazyLoad height={200} offset={100}>
+                <LazyLoad height={200} offset={100}>
 
-            <Homesliders/>
+                    <Homesliders />
 
-            </LazyLoad>
-       
-      
+                </LazyLoad>
+
+
                 {/* <Popup/> */}
 
                 {/* <div className="  h-sec py-5 " style={Sliders} >
@@ -190,11 +190,11 @@ const Home = () => {
 
                 </div>
 
- <LazyLoad height={200} offset={100}>
+                <LazyLoad height={200} offset={100}>
 
- <Ceo/>
+                    <Ceo />
 
-</LazyLoad>
+                </LazyLoad>
 
                 {/* End of services section */}
 
@@ -222,10 +222,10 @@ const Home = () => {
 
                     <LazyLoad height={200} offset={100}>
 
-                    < ImageSlider />
+                        < ImageSlider />
 
-</LazyLoad>
-                   
+                    </LazyLoad>
+
 
 
                 </div>
@@ -273,10 +273,16 @@ const Home = () => {
                             </Col>
 
                         </Row>
+
+
+
                     </Container>
                 </section>
 
+                <Container className='px-2 my-5 '>
 
+                    <PDFDownload />
+                </Container>
 
                 <Container className='px-2'>
 
@@ -299,39 +305,37 @@ const Home = () => {
 
                 < section className="uacademy  " >
 
-            <LazyLoad>
-
-                
-            
-
-                    <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
-                        style={{
-                            backgroundImage: "url(/Palawa2.png",
-                            backgroundPosition: "center",
-                            height: "100vh",
-                            backgroundSize: "cover",
-                            clipPath: "ellipse(100% 70% at 48% 44%)",
-                            backgroundRepeat: "no-repeat"
-                        }}>
+                    <LazyLoad>
 
 
 
 
-
-                        <h2 className='display-7 text-light fw-bold px-4  text-center ' data-aos="slide-right ">
-                            Do You Want to Become A  Real Estate Affiliate?
-                        </h2>
-
-                        <h5 className='display-7 text-light fw-medium px-4  text-center '>
-                            Join UR9 <span className="pt-5  text-warning fw-bold">ACADEMY</span> Today
-                        </h5>
-                        <Container className='px-5'>     <p className='text-light text-center mx-auto mw-50 fs-6 pt-3 px-2 '>Join our vibrant community of real estate affiliates for <span className="text-warning fw-bold">FREE</span> and lets build success together.
-                        </p>  </Container>
-
-
-                        <Button variant='warning' className='mt-5'><a className="  fs-5  " style={{ textDecoration: 'none', color: 'black' }} href="https://docs.google.com/forms/d/e/1FAIpQLSeQEctkZqLI0J3OnKrXuRyv-uLb7kHNqFMvRRC547mtVWGjPw/viewform?usp=pp_url">REGISTER TODAY</a></Button>
+                        <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
+                            style={{
+                                backgroundImage: "url(/Palawa2.png",
+                                backgroundPosition: "center",
+                                height: "100vh",
+                                backgroundSize: "cover",
+                                clipPath: "ellipse(100% 70% at 48% 44%)",
+                                backgroundRepeat: "no-repeat"
+                            }}>
 
 
+
+
+
+                            <h2 className='display-7 text-light fw-bold px-4  text-center ' data-aos="slide-right ">
+                                Do You Want to Become A  Real Estate Affiliate?
+                            </h2>
+
+                            <h5 className='display-7 text-light fw-medium px-4  text-center '>
+                                Join UR9 <span className="pt-5  text-warning fw-bold">ACADEMY</span> Today
+                            </h5>
+                            <Container className='px-5'>     <p className='text-light text-center mx-auto mw-50 fs-6 pt-3 px-2 '>Join our vibrant community of real estate affiliates for <span className="text-warning fw-bold">FREE</span> and lets build success together.
+                            </p>  </Container>
+
+
+                            <Button variant='warning' className='mt-5'><a className="  fs-5  " style={{ textDecoration: 'none', color: 'black' }} href="https://docs.google.com/forms/d/e/1FAIpQLSeQEctkZqLI0J3OnKrXuRyv-uLb7kHNqFMvRRC547mtVWGjPw/viewform?usp=pp_url">REGISTER TODAY</a></Button>
 
 
 
@@ -339,7 +343,9 @@ const Home = () => {
 
 
 
-                    </div>
+
+
+                        </div>
 
                     </LazyLoad>
                 </section>
@@ -353,22 +359,28 @@ const Home = () => {
                             <Col lg={6} md={6}>
                                 <Link className="fs-3" to="/Blog" style={{ textDecoration: "none", }}>
 
-                                    <div className='w-100  secimg d-flex align-items-center flex-column justify-content-center  rounded-l h-sec'
+                                    <div className='w-inherit   h- d-flex align-items-center flex-column justify-content-center  rounded-l h-sec'
 
                                         data-aos="fade-out"
                                         style={{
-                                            backgroundImage: "url(/Marsh4.jpg)",
-                                            height: "80vh",
-                                            borderTopLeftRadius: "20px",
-                                            borderBottomRightRadius: "20px",
+                                     
+
+                                        backgroundImage: "url(/newmarsh.jpg)",
+                                        height: "80vh",
+                                        objectFit: "cover",
+                                        borderBottomRightRadius: "",
+                                          backgroundRepeat: "no-repeat",
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center"
+                                          
                                         }}>
 
-                                        <h3 className='P-text rounded-4 text-dark pt-1 px-4 bg-warning fs-4 fw-bold'>UR9 Updates</h3>
+                                        <h3 className='P-text rounded-3 text-dark py-2  px-4 bg-warning fs-4 fw-medium'>UR9 Updates</h3>
 
 
 
                                         <h4 className=' text-light px-4  text-center '>
-                                           Our Latest Updates
+                                            Our Latest Updates
                                         </h4>
 
 
@@ -394,10 +406,10 @@ const Home = () => {
                             </Col>
 
                         </Row>
-<section className=''>
-<Faq/>
+                        <section className=''>
+                            <Faq />
 
-</section>
+                        </section>
 
 
                     </Container>
