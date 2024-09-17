@@ -18,8 +18,9 @@ const TeamList = [
         Name: "Glory Adeniyi",
         icon: "fas fa-star",
         Position: "Deputy Managing Director(DMD)",
-        About: "Miss. Glory C. is the Deputy Managing Director of UR9 Group. She gained valuable leadership as well as administrative experience from her different rolesand those experience as well as her keen eye for detail and ability to see potential business opportunities even before they developed have helped shape her into the business icon she is today."
+        About: "Miss Glory C. Adeniyi is the Deputy Managing Director of UR9 Group. She is a graduate of Ladoke Akintola University of Technology (LAUTECH). She graduated with a Bachelor of Technology in Agronomy. She worked as a FieldbSupervisor / Research Assistant at the International Institute of Tropical Agriculture (IITA) before going on to work as an Admin / Human Resource Officer at Leadway Assurance Company. She also worked at the Nigerian National Assembly (NASS) as the Legislative Aide to the Deputy President of the Senate before going on to assume her position at UR9 Group." +
 
+          "She gained valuable leadership as well as administrative experience from herbdofferent roles and those experiences as well as her keen eye for detail and ability to see potential business opportunities even before they develop have helped shape her into the business icon she is today."
 
     },
 
