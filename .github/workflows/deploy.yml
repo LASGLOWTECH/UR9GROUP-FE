@@ -1,24 +1,44 @@
-name: ur9 deploy
+name: Deploy to cPanel
 
 on:
   push:
-    branches: [main]
+    branches: 
+    - main
 
 jobs:
   deploy:
-    name: 🚀 Deploy website every commit
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-
+    
+    strategy:
+    matrix:
+    node-version: [14.x, 16.x, 18.x, 20.x]
+
+
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      - name: Mask sensitive data
-        run: echo "::add-mask::${{ secrets.FTP_PASSWORD }}"
+      - name: Install Dependencies
+        run: npm  insatll
 
-      - name: 📂 Sync folders and files to the server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+      - name: Build React App
+        run: npm  run build
+        
+
+      - name:  Uplaod to cPanel📂 
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build
+          server-dir: /public_html/
+          exclude: |
+            **/.git**
+            **/.git*/**
+            **/node_modules/**
+            **/.**
+
+
+
+
+          

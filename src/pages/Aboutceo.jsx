@@ -24,7 +24,7 @@ const Uriel = () => {
                         <div className='py-4'>
 
 
-                            <h3 className='fw-bold text-light  '>Hon. Dr. Uriel A. Ezeh (ILM) </h3>
+                            <h3 className='fw-bold text-light  '>Hon. (Dr.) Uriel A. Ezeh (CFIAR; PCF, CIPRMP) </h3>
                             <h5 className='fw-bold text-warning  '>CEO UR9 GROUP </h5>
                             {/* <div className='  mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div> */}
                             <p className="py-2 P-text text-light ">
