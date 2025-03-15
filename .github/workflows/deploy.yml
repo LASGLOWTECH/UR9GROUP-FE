@@ -33,6 +33,6 @@ jobs:
         protocol: ${{ secrets.FTP_PROTOCOL}}
         port: ${{ secrets.FTP_PORT}}
         local-dir: ./build/
-        # server-dir: ./ # Upload directly to the root (public_html)
+        
         dangerous-clean-slate: true
         timeout: 120000
