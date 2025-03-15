@@ -1,0 +1,730 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--Poppings);
+}
+
+
+body {
+
+  --primary-color: #15172f;
+  --light-color1: #1f1e21;
+  --dark: #000000b3;
+  --gold: #e3ab13;
+  --darkgray: darkgrey;
+  --h1-color: 'League Spartan', sans-serif;
+  --Rail-way: 'Raleway';
+  --Public-Sans: 'Public Sans', sans-serif;
+  --Poppings: 'Poppins', sans-serif;
+  --Lato: 'Lato', sans-serif;
+  --Roboto: 'Roboto Condensed', sans-serif;
+  --Montserat: 'Montserrat', sans-serif;
+}
+
+
+.P-text {
+  font-family: var(--Poppings);
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 200;
+
+}
+
+.prop-text {
+  font-family: var(--Poppings);
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.prop-text1 {
+  font-family: var(--Poppings);
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* hero section */
+
+.blocl {
+  width: 100%;
+  height: 100%;
+  background-blend-mode: overlay;
+  opacity: 0.4;
+
+
+}
+
+.h-sec {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  box-shadow: 0px 0px 70px 50px rgba(0, 0, 0, 0.9)inset;
+  background-blend-mode: darken;
+  transition: 2s ease-in-out;
+}
+
+
+.h-sec:hover {
+  box-shadow: 0px 0px 70px 50px rgba(0, 0, 0, 1)inset;
+
+
+
+}
+
+
+.all-features {
+  display: none;
+}
+
+
+.dred:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: 2 ease-out;
+  transition-duration: 1s;
+
+  border-radius: 30px solid white
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.gold2 {
+  background-color: var(--gold);
+}
+
+.dred a {
+  text-decoration: none;
+}
+
+.img1 {
+
+  height: 50px;
+  width: 50px;
+
+}
+
+.imG {
+  height: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--darkgray);
+
+  font-size: 16px;
+
+}
+
+.nav-links a:nth-child(8) {
+  color: black;
+  background-color: var(--gold);
+  border-radius: 15px;
+
+  color: black;
+  margin-left: 50px;
+
+}
+
+.nav-links a:nth-child(8):hover {
+  transform: scale(1.1);
+  color: #000000;
+}
+
+.nav-links a:hover {
+  color: gold;
+
+}
+
+/* nav bar toggler */
+button.navbar-toggler {
+  color: #ddc125;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+#collasible-nav-dropdown {
+  background-color: transparent;
+  border: transparent;
+
+}
+
+
+.dropdown-menu.show {
+  background-color: black;
+}
+
+button.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+
+}
+
+
+
+.mission-section:hover {
+  background-color: var(--dark);
+  border-radius: 20px;
+
+  transition: all 10s ease-in-out;
+}
+
+.ur9-values:hover {
+  background-color: rgba(117, 111, 111, 0.2);
+  border-radius: 20px;
+  opacity: 0.4;
+  box-shadow: 2px #cabc1db3 3px floralwhite;
+  transition: all 2s ease-in-out;
+}
+
+h3 {
+  font-family: var(--lato);
+  font-weight: 400;
+}
+
+
+h1,
+.lin-h1 {
+  font-family: var(--Poppings);
+  font-weight: 900;
+  font-size: 6px;
+
+
+
+}
+
+#bakd {
+  background: black;
+
+}
+
+
+
+.hero-i {
+  color: black;
+  font-weight: 600;
+}
+
+.hero-i:hover {
+  color: white;
+  font-weight: 600;
+}
+
+#batton:hover {
+  background-color: transparent;
+
+  transition: 1s ease-in-out;
+  border: 1px solid white;
+}
+
+#batton {
+
+  background-color: #e3ab13;
+  border: none;
+  color: #000000;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.form-control {
+  font-family: var(--Lato);
+  border-radius: 0px;
+}
+
+.short-note {
+  background-color: antiquewhite;
+}
+
+.footer-icon a {
+  align-self: center;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.image4 {
+  border-radius: 100%;
+
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: auto 5px;
+  text-align: center;
+}
+
+.value-text {
+  color: darkgrey
+}
+
+/* about hero styling */
+
+.proud {
+  border-radius: 100%;
+  height: 100px;
+  width: auto
+}
+
+
+
+ul li {
+  list-style-type: none;
+  ;
+}
+
+.misicons {
+  font-size: 30px;
+}
+
+.footer-section {
+  background-color: #000000;
+}
+
+
+
+/* Animate Logo during page load */
+.load-img {
+  border-color: #ddc125;
+  animation: animate 1s alternate infinite ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .nav-links {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+
+  .nav-links a {
+    line-height: 2.5;
+    font-family: var(--Poppings);
+    font-size: 14px;
+  }
+
+
+  .formally {
+    width: 400px;
+    margin: 5px 5px
+  }
+
+  .welcome {
+    margin-top: 20%;
+  }
+
+
+
+  #prop-items {
+    padding: auto;
+  }
+
+  .estate-agent {
+    width: 500px;
+  }
+
+
+
+
+  @media screen and (max-width: 500px) {
+    .Hero-text {
+      font-size: 24px;
+    }
+    .ceoimg{
+      width: 200px;
+      margin:auto;
+      height: 200px;
+    }
+    .blocl {
+      width: 100%;
+      height: 400px;
+
+    }
+
+    .textfield {
+
+      width: 100%;
+    }
+
+    .Uriel {
+      text-align: center;
+    }
+
+    .bimage {
+      width: 250px
+    }
+
+    .carousel-caption {
+      margin: -20px -40px;
+    }
+
+    .ican {
+      width: 100%;
+    }
+
+    .carousel-item {
+      height: 400px;
+      padding-top: 20px;
+
+
+    }
+
+
+    .nav-links a:nth-child(8) {
+      color: var(--darkgray);
+      background-color: transparent;
+
+      margin-left: 0px;
+    }
+
+    .nav-links a:nth-child(8):hover {
+      color: var(--gold);
+      transform: scale(1);
+    }
+
+
+    .estated {
+      padding-top: 2px;
+    }
+  }
+
+
+
+
+
+}
+
+.welcome {
+  margin-top: 70%;
+}
+
+
+
+
+.Like:hover {
+  color: black;
+}
+
+
+/* Project section styling */
+
+
+
+.estate {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-image: url('/public/E8.jpg');
+  border-top: 6px solid #ddc125;
+  border-bottom: 6px solid #ddc125;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#Project-Hero {
+
+  background: linear-gradient(#050505, #0c0b0f, black);
+  height: auto;
+
+
+}
+
+.foot-link:hover {
+  color: #ddc125;
+}
+
+.Contact-hero {
+  background: rgba(0, 0, 0, 0.9) url("/public/ur9consti.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-sec,
+.failurepage,
+.load-val {
+  background-image: radial-gradient(#050505, #0c0b0f, black);
+
+
+}
+
+.Blogs {
+  background-image: radial-gradient(#050505, #0c0b0f);
+
+
+}
+
+.fa .Happy {
+  width: 100%;
+  height: auto;
+}
+
+.estate-agent {
+  width: 100%;
+  height: auto;
+}
+
+
+.Uriel {
+  color: white;
+  font-size: 40px;
+  color: #aa8305fe;
+}
+
+
+#Project-Hero :hover {
+  transition: all;
+  transition-duration: 2s;
+  transform: scaleY(20deg);
+
+
+}
+
+.foot-link:hover {
+  color: #e3ab13;
+}
+
+.Ourprivacy {
+  background: radial-gradient(#e3ab13, #e3ab13, black);
+
+
+}
+
+.iconoms {
+  border: 2px solid gold;
+
+}
+
+.price-tag {
+  margin-top: -40px;
+
+}
+
+
+
+.project-im {
+  width: 100%;
+
+}
+
+.des {
+
+  border: 3px solid #ddc125;
+}
+
+.btn-title:hover {
+  background-color: gold;
+  color: black;
+}
+
+.btn-title {
+  border: 1px solid black;
+  color: #ddc125;
+  ;
+  background-color: transparent;
+
+
+}
+
+.lico a {
+  text-decoration: none;
+
+
+}
+
+.arrow-up {
+  position: fixed;
+  z-index: 1;
+  bottom: 150px;
+  right: 30px;
+
+
+}
+
+
+/* scale back to top arrow */
+
+.load-arrow {
+
+  animation: animie 0.5s alternate infinite ease;
+  box-shadow: inset;
+  fill: gold;
+
+}
+
+@keyframes animie {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.prop-image {
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-left: 9px solid gold;
+  border-right: 9px solid gold;
+}
+
+.begin {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  transition: 1s ease-in-out;
+  background-size: "cover";
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.ceopro{
+
+  background: rgba(0, 0, 0, 0.98);
+  background-blend-mode: darken;
+
+}
+.secimg {
+
+  background: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  transition: 1s ease-in-out;
+  z-index: 100;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: brightness(60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  box-shadow: 0px 0px 70px 50px rgba(0, 0, 0, 0.9)inset;
+  background-blend-mode: darken;
+  transition: 3s ease-in-out;
+
+}
+
+.btn-custom{background-color:#E3AB13;
+color:black}
+.btn-custom:hover {
+  color: #ffffff; /* Text color on hover */
+  background-color: #000000; /* Background color on hover */
+  border-color: #000000b3; /* Border color on hover */
+}
+.lin-h1 {
+  font-size: 50px;
+}
+
+
+  @media (max-width:500px) {
+    .lin-h1 {
+      font-size: 30px;
+      color: #ddc125;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Hero-text {
+    font-size: 24px;
+  }
+}
+
+
+.ur9lin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 70px 50px rgba(0, 0, 0, 0.5)inset;
+  margin-top: 80px;
+  color: gold;
+  padding: 100px 0;
+ 
+
+}
+
+.lin-h1::last-word{
+  color:#ddc125
+}
+
+  /* Custom CSS for desktop mode */
+  @media (min-width: 768px) {
+    .textfield {
+    width: 600px;
+    /* Adjust this width as needed */
+    word-wrap: break-word;
+    /* Ensures text breaks within the width */
+  }
+
+
+}
+
+
+
+.secimg:hover {
+  box-shadow: 0px 0px 70px 50px rgba(0, 0, 0, 0.5)inset;
+
+}
+
+.foot-link:hover {
+  color: var(--gold);
+  transition: all;
+  transition-duration: 2s;
+}
+
+/* contact section googlemP STYLES */
+.google-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+}
+
+.google-map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Bullet list styling */
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.bullet-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  list-style-type: disc;
+}
