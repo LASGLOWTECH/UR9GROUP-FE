@@ -61,7 +61,7 @@ const TeamList = [
         Name: "Kenneth Obinna Obi",
         icon: "fas fa-star",
         Position: "Head of Branding & Media",
-        About: "Kenneth Obinna Obi is a Nigerian Actor, a Creative Director and a Media Consultant.He has a Bachelor of Art from the prestigious Abia State University." +
+        About: "Kenneth Obinna Obi is a Nigerian Actor, a Creative Director and a Media Consultant. He has a Bachelor of Art from the prestigious Abia State University." +
             " He is a registered member of Actor's Guild of Nigeria [AGN] and has featured in numerous movies like; If I am president, Violated Trust, My mother's Secret, House boy, Starved, etc. His competence and drive for excellence has earned him numerous awards in his career. He is happily married with beautiful kids. A loverof arts, lifestyle and he is committed to excellent deliveries in UR9 Group"
 
 
@@ -95,10 +95,10 @@ const TeamList = [
         Name: " Mary Wamu Kpanja",
         icon: "fas fa-star",
         Position: "Legal Officer",
-        About: "Mary Wamu Kpanja, Esq. is the Legal and Compliance Supervisor at UR9 Group, bringing a wealth oflegal expertise and a diverse skill set to the table. A graduate of Ahmadu Bello University and the NigeriaLaw School (Lagos Campus), she is currently pursuing an LL.M in Intellectual Property Law and Policy. "+
-        "Mary alsoholds a professional diploma in social media and a product management certificate from 3MTT. Beyond her corporaterole, Mary is the Executive Director of Kpanja Poverty Alleviation Initiative, an NGO dedicated to empowering individualsand communities. " +
-       "She has spearheaded initiatives to help students in underserved areas return to school. Mary is also a Cohort6 fellow of the SDG Advocate Program under SDSN Youth Nigeria.In her role at UR9 Group"+
-        "Mary ensures legal compliance acrosssubsidiaries, upholding high standards and internal policies with precision and dedication."
+        About: "Mary Wamu Kpanja, Esq. is the Legal and Compliance Supervisor at UR9 Group, bringing a wealth of legal expertise and a diverse skill set to the table. A graduate of Ahmadu Bello University and the Nigeria Law School (Lagos Campus), she is currently pursuing an LL.M in Intellectual Property Law and Policy. "+
+        "Mary also holds a professional diploma in social media and a product management certificate from 3MTT. Beyond her corporate role, Mary is the Executive Director of Kpanja Poverty Alleviation Initiative, an NGO dedicated to empowering individuals and communities. " +
+       "She has spearheaded initiatives to help students in underserved areas return to school. Mary is also a Cohort6 fellow of the SDG Advocate Program under SDSN Youth Nigeria. In her legal  role at UR9 Group,"+
+        " Mary ensures legal compliance across subsidiaries, upholding high standards and internal policies with precision and dedication."
     },
 
 
@@ -125,7 +125,7 @@ const TeamList = [
         Position: "Fashion Supervisor",
         About: "Miss Anthonia E. Imana is an Insightful and highly experienced and accomplished supervisor in the fashion space, " +
         "worked in various fashion Houses before joining the UR9 group. A supervisor within processing and improving operations through " +
-       " effective employee motivational strategies. Proficient in best practices, markettrends and regulatory requirements of industry operations. " +
+       " effective employee motivational strategies. Proficient in best practices, market trends and regulatory requirements of industry operations. " +
        " With B.sc from the prestigious Ambrose Alli University with a proven track record of leading high performing team and meeting customers needs adequately."
     },
 
