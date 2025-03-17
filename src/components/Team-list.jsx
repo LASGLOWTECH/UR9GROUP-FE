@@ -61,8 +61,8 @@ const TeamList = [
         Name: "Kenneth Obinna Obi",
         icon: "fas fa-star",
         Position: "Head of Branding & Media",
-        About: "Kenneth Obinna Obi is a Nigerian Actor, a Creative Director and a Media Consultant. He has a Bachelor of Art from the prestigious Abia State University." +
-            " He is a registered member of Actor's Guild of Nigeria [AGN] and has featured in numerous movies like; If I am president, Violated Trust, My mother's Secret, House boy, Starved, etc. His competence and drive for excellence has earned him numerous awards in his career. He is happily married with beautiful kids. A loverof arts, lifestyle and he is committed to excellent deliveries in UR9 Group"
+        About: "Kenneth Obinna Obi is a Nigerian Actor, a Creative Director, Producer and Media Consultant. He has a Bachelor of Art from the prestigious Abia State University." +
+            " He is a registered member,  Actor's Guild of Nigeria [AGN] and has featured in numerous movies like; If I am president, Violated Trust, My mother's Secret, House boy, Starved, etc. His competence and drive for excellence has earned him numerous awards in his career. A loverof arts and lifestyle, and he is committed to excellent deliveries in UR9 Group."
 
 
     },
