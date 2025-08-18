@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const Blogs = () => {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+
+    const handleMessage = (event) => {
+      // security check: only listen to messages from our blog domain
+      if (event.origin !== "https://ur9blog.vercel.app") return;
+
+      if (event.data.type === "open-link") {
+        window.open(event.data.url, "_blank", "noopener,noreferrer");
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
+  }, []);
+
   return (
     <div
       style={{
@@ -16,6 +36,7 @@ const Blogs = () => {
       }}
     >
       <iframe
+        ref={iframeRef}
         src="https://ur9blog.vercel.app/"
         title="UR9 Blog"
         style={{
