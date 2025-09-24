@@ -4,8 +4,6 @@ const Blogs = () => {
   const iframeRef = useRef(null);
 
   useEffect(() => {
-    const iframe = iframeRef.current;
-
     const handleMessage = (event) => {
       // security check: only listen to messages from our blog domain
       if (event.origin !== "https://ur9blog.vercel.app") return;
