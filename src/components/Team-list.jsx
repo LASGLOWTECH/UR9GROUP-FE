@@ -44,15 +44,15 @@ const TeamList = [
 
 
 
-    {
+    // {
 
-        Avatar: "/Abdul.jpg",
-        Name: "Engr. Abdulmalik- Sheriff Mustapha",
-        icon: "fas fa-star",
-        Position: "Head of Construction",
-        About: "Engr. Abdulmalik Mustafa is the Head of Construction at UR9. He is a graduate of Engineering  from the prestigious Ahmadu Bello University, Zaria. After training as an Aircraft Technician  with the Nigerian College of Aviation Technology (NCAT), he joined the real estate industry as  an Engineer with a handful of real estate companies. Also a certified Project Manager and Programmer, he has worked on several successful projects  spanning across property development and web development before assuming his position at UR9  Group.  He is a charismatic and efficient team leader with a keen eye for detail"
+    //     Avatar: "/Abdul.jpg",
+    //     Name: "Engr. Abdulmalik- Sheriff Mustapha",
+    //     icon: "fas fa-star",
+    //     Position: "Head of Construction",
+    //     About: "Engr. Abdulmalik Mustafa is the Head of Construction at UR9. He is a graduate of Engineering  from the prestigious Ahmadu Bello University, Zaria. After training as an Aircraft Technician  with the Nigerian College of Aviation Technology (NCAT), he joined the real estate industry as  an Engineer with a handful of real estate companies. Also a certified Project Manager and Programmer, he has worked on several successful projects  spanning across property development and web development before assuming his position at UR9  Group.  He is a charismatic and efficient team leader with a keen eye for detail"
 
-    },
+    // },
 
 
 
@@ -75,17 +75,17 @@ const TeamList = [
 
 
     
-    {
+    // {
 
-        Avatar: "/legal.jpg",
-        Name: " Mary Wamu Kpanja",
-        icon: "fas fa-star",
-        Position: "Legal Officer",
-        About: "Mary Wamu Kpanja, Esq. is the Legal and Compliance Supervisor at UR9 Group, bringing a wealth of legal expertise and a diverse skill set to the table. A graduate of Ahmadu Bello University and the Nigeria Law School (Lagos Campus), she is currently pursuing an LL.M in Intellectual Property Law and Policy. "+
-        "Mary also holds a professional diploma in social media and a product management certificate from 3MTT. Beyond her corporate role, Mary is the Executive Director of Kpanja Poverty Alleviation Initiative, an NGO dedicated to empowering individuals and communities. " +
-       "She has spearheaded initiatives to help students in underserved areas return to school. Mary is also a Cohort6 fellow of the SDG Advocate Program under SDSN Youth Nigeria. In her legal  role at UR9 Group,"+
-        " Mary ensures legal compliance across subsidiaries, upholding high standards and internal policies with precision and dedication."
-    },
+    //     Avatar: "/legal.jpg",
+    //     Name: " Mary Wamu Kpanja",
+    //     icon: "fas fa-star",
+    //     Position: "Legal Officer",
+    //     About: "Mary Wamu Kpanja, Esq. is the Legal and Compliance Supervisor at UR9 Group, bringing a wealth of legal expertise and a diverse skill set to the table. A graduate of Ahmadu Bello University and the Nigeria Law School (Lagos Campus), she is currently pursuing an LL.M in Intellectual Property Law and Policy. "+
+    //     "Mary also holds a professional diploma in social media and a product management certificate from 3MTT. Beyond her corporate role, Mary is the Executive Director of Kpanja Poverty Alleviation Initiative, an NGO dedicated to empowering individuals and communities. " +
+    //    "She has spearheaded initiatives to help students in underserved areas return to school. Mary is also a Cohort6 fellow of the SDG Advocate Program under SDSN Youth Nigeria. In her legal  role at UR9 Group,"+
+    //     " Mary ensures legal compliance across subsidiaries, upholding high standards and internal policies with precision and dedication."
+    // },
 
 
 
