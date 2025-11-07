@@ -89,16 +89,16 @@ const TeamList = [
 
 
 
-    {
+    // {
 
-        Avatar: "/Anita.jpg",
-        Name: " Asemokhai Anita Ochuwa",
-        icon: "fas fa-star",
-        Position: "Admin/Head of Events",
-        About:  "Miss Anita is the Admin/Event Planner at UR9 Group, she is responsible for planning, coordinating, and executing high-profile events, conferences, and weddings. " +
-            "With a keen eye for detail and passion for creativity and excellence. She excels in fast-paced environments where values and impact are made."
+    //     Avatar: "/Anita.jpg",
+    //     Name: " Asemokhai Anita Ochuwa",
+    //     icon: "fas fa-star",
+    //     Position: "Admin/Head of Events",
+    //     About:  "Miss Anita is the Admin/Event Planner at UR9 Group, she is responsible for planning, coordinating, and executing high-profile events, conferences, and weddings. " +
+    //         "With a keen eye for detail and passion for creativity and excellence. She excels in fast-paced environments where values and impact are made."
 
-    },
+    // },
 
 
 
