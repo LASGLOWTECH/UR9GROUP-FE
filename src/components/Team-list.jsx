@@ -2,11 +2,11 @@ const TeamList = [
 
     {
 
-        Avatar: "/boss.png",
+        Avatar: "/new/ceo.jpg",
         Name: "Hon.  Dr. Uriel Ezeh",
         icon: "fas fa-star",
         Position: "Group Managing Director",
-        About: "Hon. Dr. Uriel A. Ezeh (ILM) is the Founder and Group Chief Executive Officer of UR9 GROUP. A multi-talented business tycoon, he has overseen the growth and expansion of the UR9 brand into one of the foremost premium luxury brands in the country.A graduate of Business and Management from the University of Sunderland and a dual Master’s holder of Management and Leadership; Global Management from the prestigious Regent’s Business School, London.The Honourable Doctor Uriel has shown himself to be a serial entrepreneur with the gift of discerning times and seasons; a gift from God he acknowledges as one of the foundations of success of the UR9 Group.",
+        About: "Hon. Dr. Uriel A. Ezeh (ILM) is the Founder and Group Chief Executive Officer of UR9 GROUP. A multi-talented business tycoon, he has overseen the growth and expansion of the UR9 brand into one of the foremost premium luxury brands in the country.A graduate of Business and Management from the University of Sunderland and a dual Master's holder of Management and Leadership; Global Management from the prestigious Regent's Business School, London.The Honourable Doctor Uriel has shown himself to be a serial entrepreneur with the gift of discerning times and seasons; a gift from God he acknowledges as one of the foundations of success of the UR9 Group.",
         member: "Fellow: Institute of Chartered Administrators and Researchers of Nigeria." ,
         button: "Read More"
 
@@ -14,7 +14,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/DMD.png",
+        Avatar: "/new/CFO.JPG",
         Name: "Glory Adeniyi",
         icon: "fas fa-star",
         Position: "Deputy Managing Director(DMD)",
@@ -27,7 +27,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/Hr.jpg",
+        Avatar: "/new/hr.JPG",
         Name: "Sandra Udeji",
         icon: "fas fa-star",
         Position: "HR/GM",
@@ -37,8 +37,6 @@ const TeamList = [
             " managing all aspects of Human Resources and overseeing the overall operations of the company with precision and finesse, driving efficiency, productivity, and success at UR9."
 
     },
-
-
 
 
 
@@ -65,12 +63,9 @@ const TeamList = [
 
 
 
-
-
-
     {
 
-        Avatar: "/lfhsupervisor.jpg",
+        Avatar: "/new/IMG_6501.JPG",
         Name: "Miss Anthonia E. Imana",
         icon: "fas fa-star",
         Position: "Fashion Supervisor",
@@ -80,6 +75,32 @@ const TeamList = [
        " With B.sc from the prestigious Ambrose Alli University with a proven track record of leading high performing team and meeting customers needs adequately."
     },
 
+    {
+
+        Avatar: "/new/bmo.jpg",
+        Name: "Chidiogo M. Udebuani",
+        icon: "fas fa-star",
+        Position: "Business Development Manager, UR9 Group",
+        About: "C. M. Udebuani is a results-driven Business Developer, a Certified Projects Manager, and a renowned Computer Scientist (master's and bachelor's degrees from the estimable University of Abuja and Nnamdi Azikiwe University, Awka, respectively). She has a strong record of excellence in technology-driven organizational growth and innovation. Skilled in leveraging advanced analytical, managerial, and strategic planning competencies to deliver complex projects efficiently and drive sustainable business expansion. Also certified in HRM, CRM, ACLRC & HSE. Adept at aligning technical solutions with corporate objectives, optimizing processes, and leading cross-functional teams to achieve measurable outcomes. Recognized for exceptional leadership, strategic foresight, and the ability to bridge the gap between technology, management, and market development."
+    },
+
+    {
+
+        Avatar: "/placeholder.jpg",
+        Name: "Vitalis Emmanuel",
+        icon: "fas fa-star",
+        Position: "Head of Media, UR9 Group",
+        About: "Vitalis Emmanuel is a creative brand developer, project manager, and media expert with a passion for crafting powerful visual stories. As Head of Media at UR9 Group, he has led numerous branding and media projects, producing over 1,000 visuals for companies and organizations. A Computer Science graduate from Cross River State University of Technology, he is currently pursuing a Master's degree in Information Technology. Vitalis is also a movie director who has directed several brand stories, documentaries, and music videos showcasing his versatility and creative depth. A member of the Media Practitioners Association of Nigeria, he is skilled in digital marketing, PR, and multimedia production. With a consistent record of excellence and innovation, his mission is to strengthen UR9 Group's brand presence and position its diverse businesses as industry leaders."
+    },
+
+    {
+
+        Avatar: "/placeholder.jpg",
+        Name: "Emeto Cynthia Onyinye",
+        icon: "fas fa-star",
+        Position: "Accountant, UR9 Group",
+        About: "Emeto Cynthia Onyinye is a skilled and detail oriented accountant at UR9 Group, with a strong background in financial accounting, auditing, and data management. She holds a B.Sc. in Accounting from Imo State University and has gained valuable experience working as both a Financial Accountant and an Auditor in reputable organizations. Cynthia is proficient in using accounting software and data entry systems, which helps her maintain accurate financial records, support effective budgeting, and ensure compliance with organizational policies. She has a keen interest in taxation, finance, and business development, and plans to further her professional qualifications by pursuing certifications with the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN). Cynthia is passionate about promoting financial integrity, accountability, and helping organizations make sound financial decisions that drive growth and sustainability."
+    },
 
 
 
@@ -87,4 +108,3 @@ const TeamList = [
 ]
 
 export default TeamList;
-

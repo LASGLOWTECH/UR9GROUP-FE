@@ -4,10 +4,24 @@ import { Col } from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
 import TeamList from '../components/Team-list';
 import { Helmet } from 'react-helmet-async';
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useState } from 'react';
 
 
 const Team = () => {
+   const [expandedCards, setExpandedCards] = useState({});
+
+   const toggleExpand = (index) => {
+      setExpandedCards(prev => ({
+         ...prev,
+         [index]: !prev[index]
+      }));
+   };
+
+   const truncateText = (text, maxLength = 120) => {
+      if (!text) return '';
+      if (text.length <= maxLength) return text;
+      return text.substring(0, maxLength) + '...';
+   };
 
    return (
       <><Helmet>
@@ -38,58 +52,109 @@ const Team = () => {
 
 
 
+               <Row className='g-4'>
+                  {TeamList.map((Teams, index) => {
+                     const isExpanded = expandedCards[index];
+                     return (
+                        <Col key={index} xs={12} sm={6} lg={4}>
+                           <div className='Team-item rounded-4 overflow-hidden d-flex flex-column' style={{ boxShadow: '0 4px 6px rgba(0,0,0,0.1)', backgroundColor: 'white', height: '600px' }} >
+                              
+                              {/* Image Card */}
+                              <div className='position-relative' style={{ width: '100%', height: '350px', overflow: 'hidden', flexShrink: 0 }}>
+                                 <img 
+                                    className="w-100 h-100" 
+                                    src={Teams.Avatar} 
+                                    alt={Teams.Name}
+                                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                                 />
+                              </div>
 
+                              {/* Content Section */}
+                              <div className='p-3 d-flex flex-column flex-grow-1' style={{ height: '250px', overflow: 'hidden' }}>
+                                 {/* Name */}
+                                 <h3 className="fw-bold fs-5 mb-2" style={{ color: '#15172f', flexShrink: 0 }}>
+                                    {Teams.Name}
+                                 </h3>
 
-               <ResponsiveMasonry
-                  columnsCountBreakPoint={{ 350: 1, 750: 2, 900: 4 }}
-                  gutter='5px' >
+                                 {/* Position/Title */}
+                                 <p className="fw-semibold mb-2" style={{ color: '#aa8305fe', fontSize: '14px', flexShrink: 0 }}>
+                                    {Teams.Position}
+                                 </p>
 
-                  <Masonry>
+                                 {/* Member credentials if available */}
+                                 {Teams.member && (
+                                    <p className="fw-normal mb-2" style={{ color: '#666', fontSize: '13px', flexShrink: 0 }}>
+                                       {Teams.member}
+                                    </p>
+                                 )}
 
-
-                     {TeamList.map(Teams => {
-                        return (
-                           <div className='px-2 ' key={Teams.id}>
-                              {/* <Col lg={4} md={6} key={Teams.id}> */}
-
-                              <div className='Team-item   my-2 rounded-4' style={{ boxShadoW: '9px 20px white ', backgroundColor: 'white' }} >
-                                 <div className='d-flex flex-row justify-between align-items-center ' style={{ boxShadoW: '9px 20px white ', backgroundColor: '#aa8305fe' }} >
-                                    <div className='img-ito d-flex bg-light m-2 justify-content-center align-items-center' style={{ width: '', height: '', borderRadius: '100%' }}><img className="icon-im " src={Teams.Avatar} alt="house" style={{ width: '150px', height: '150px', borderRadius: '100%', border: '3px solid white' }} ></img></div>
-                                    <h3 className=" fw-medium fs-5 ps-2 text-right py-4 service-title" style={{ color: 'white' }}>{Teams.Name}</h3>
-
+                                 {/* Description with expand/collapse */}
+                                 <div className='d-flex flex-column flex-grow-1' style={{ minHeight: '0' }}>
+                                    <div style={{ flexGrow: 1, overflowY: isExpanded ? 'auto' : 'hidden' }}>
+                                       <p 
+                                          className="mb-0" 
+                                          style={{ 
+                                             fontSize: '14px', 
+                                             color: '#404145',
+                                             lineHeight: '1.6',
+                                             transition: 'all 0.3s ease'
+                                          }}
+                                       >
+                                          {isExpanded ? (
+                                             <>
+                                                {Teams.About}
+                                                {Teams.About && Teams.About.length > 120 && (
+                                                   <span> </span>
+                                                )}
+                                             </>
+                                          ) : (
+                                             <>
+                                                {truncateText(Teams.About)}
+                                                {Teams.About && Teams.About.length > 120 && (
+                                                   <button
+                                                      onClick={() => toggleExpand(index)}
+                                                      className='btn p-0 border-0 bg-transparent ms-1'
+                                                      style={{ 
+                                                         color: '#aa8305fe',
+                                                         cursor: 'pointer',
+                                                         fontSize: '14px',
+                                                         textDecoration: 'underline',
+                                                         fontWeight: '500'
+                                                      }}
+                                                      aria-label="See more"
+                                                   >
+                                                      See more
+                                                   </button>
+                                                )}
+                                             </>
+                                          )}
+                                       </p>
+                                       {isExpanded && Teams.About && Teams.About.length > 120 && (
+                                          <button
+                                             onClick={() => toggleExpand(index)}
+                                             className='btn p-0 border-0 bg-transparent mt-1'
+                                             style={{ 
+                                                color: '#aa8305fe',
+                                                cursor: 'pointer',
+                                                fontSize: '14px',
+                                                textDecoration: 'underline',
+                                                fontWeight: '500'
+                                             }}
+                                             aria-label="See less"
+                                          >
+                                             See less
+                                          </button>
+                                       )}
+                                    </div>
                                  </div>
-
-                                 <div className="Rating-icon m-2 py-1 px-2 text-warning ">
-                                    <i className={Teams.icon}></i>
-                                    <i className={Teams.icon}></i>
-                                    <i className={Teams.icon}></i>
-                                    <i className={Teams.icon}></i>
-                                    <i className={Teams.icon}></i>
-
-                                 </div>
-
-
-                                 <p className=" px-3 fw-bolder  service-title" style={{ color: '#404145' }}>{Teams.Position}</p>
-                                 <p className=" px-3 fw-bold P-text service-title" style={{ color: '#404145' }}>{Teams.member}</p>
-                                 <p className=" pro-text px-3 pb-3 text  " style={{ fontSize: '15px', color: 'black' }}>{Teams.About}</p>
-                                 
-                                
-                                 
-
-
 
                               </div>
+
                            </div>
-
-
-                        )
-
-                     })}
-
-                  </Masonry>
-
-
-               </ResponsiveMasonry>
+                        </Col>
+                     )
+                  })}
+               </Row>
 
 
 
