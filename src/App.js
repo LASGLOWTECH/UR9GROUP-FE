@@ -64,7 +64,7 @@ function App() {
      
   <RotateLoader color='#000000b3' loading={loading} size='150'/></div>}>
           <div>
-            {/* <Popup /> */}
+            {/* <Popups /> */}
 
             <Navbar />
 
