@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches:
       - main
@@ -13,26 +13,35 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: Use Node.js  22.13.1
-
+    - name: Use Node.js 22.13.1
+      # Note: I've removed the space before the version number for cleaner YAML.
       uses: actions/setup-node@v2
       with:
-        node-version: ' 22.13.1'
+        node-version: '22.13.1'
       
     - name: 🔨 Build Project
       run: |
         npm install
         npm run build
     
-    - name:  📂 Sync files to FTP serve
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    # --- FIX APPLIED HERE: SWITCHING TO SFTP ACTION ---
+    - name: 📂 Sync files to SFTP server
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        server: ${{ secrets.FTP_SERVER}}
-        username: ${{ secrets.FTP_USERNAME}}
-        password: ${{ secrets.MYSECRETPASSWORD}}
-        protocol: ${{ secrets.FTP_PROTOCOL}}
-        port: ${{ secrets.FTP_PORT}}
-        local-dir: ./build/
+        username: ${{ secrets.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
+        # The default for SFTP is port 22, but we use your existing secret 
+        # just in case your hosting provider uses a non-standard port.
+        port: ${{ secrets.FTP_PORT }} 
+        password: ${{ secrets.MYSECRETPASSWORD }}
         
-        dangerous-clean-slate: true
-        timeout: 120000
+        # The local directory containing the files to upload (your built output)
+        local_path: ./build/*
+        
+        # The remote directory path on your server (e.g., '/public_html/')
+        # You will need to replace this with your actual target directory on the server
+        remote_path: '/path/to/your/remote/directory/'
+        
+        # Optionally set this to 'true' to delete files on the server that are not in your local build.
+        # This mirrors the functionality of 'dangerous-clean-slate: true' you had before.
+        delete_remote_files: true
