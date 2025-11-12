@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet-async';
 <h1 className="fw-bold text-dark fs-1 display-5 py-6 ">404</h1>
 <h5 className="">Page not found!</h5>
 <p className="P-text ">
-  Sorry the page your are trying to access does not exist, please check your route
+  Sorry the page your are trying to access doesn't exist, please check your route
 
 </p>
 <div className=''>
