@@ -14,7 +14,6 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Use Node.js 22.13.1
-      # Note: I've removed the space before the version number for cleaner YAML.
       uses: actions/setup-node@v2
       with:
         node-version: '22.13.1'
@@ -24,24 +23,22 @@ jobs:
         npm install
         npm run build
     
-    # --- FIX APPLIED HERE: SWITCHING TO SFTP ACTION ---
+    # --- PORT 22 HARDCODED TO FIX 'BAD PORT' ERROR ---
     - name: 📂 Sync files to SFTP server
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         username: ${{ secrets.FTP_USERNAME }}
         server: ${{ secrets.FTP_SERVER }}
-        # The default for SFTP is port 22, but we use your existing secret 
-        # just in case your hosting provider uses a non-standard port.
-        port: ${{ secrets.FTP_PORT }} 
+        # Port 22 is hardcoded to bypass the secret parsing issue. 
+        # If your SFTP uses a custom port, replace '22' with your port number.
+        port: 22 
         password: ${{ secrets.MYSECRETPASSWORD }}
         
-        # The local directory containing the files to upload (your built output)
+        # Local path: The built output of your project
         local_path: ./build/*
         
-        # The remote directory path on your server (e.g., '/public_html/')
-        # You will need to replace this with your actual target directory on the server
-        remote_path: '/path/to/your/remote/directory/'
+        # *** ACTION REQUIRED: REPLACE THIS WITH YOUR SERVER'S WEB ROOT PATH ***
+        # Example: '/var/www/html/' or '/public_html/your-app/'
+        remote_path: '/public_html/'
         
-        # Optionally set this to 'true' to delete files on the server that are not in your local build.
-        # This mirrors the functionality of 'dangerous-clean-slate: true' you had before.
         delete_remote_files: true
