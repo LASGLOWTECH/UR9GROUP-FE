@@ -23,26 +23,14 @@ jobs:
           npm install
           npm run build
       
-      # --- HARDCODED CREDENTIALS FOR SFTP DEPLOYMENT ---
       - name: 📂 Sync files to SFTP server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          # HARDCODED Username
           username: 'urgroupc'
-          
-          # HARDCODED Server IP Address (Fixes "Could not resolve hostname")
           server: '102.212.246.99'
-          
-          # SFTP Port
-          port: 22 
-          
-          # HARDCODED Password (!!! CRITICAL SECURITY RISK !!!)
+          # This line has been changed to 2222
+          port: 2222 
           password: '3i@g8rVzR7!('
-          
-          # Local path to upload from
           local_path: './build/*'
-          
-          # Remote destination path
           remote_path: '/home/urgroupc'
-          
           delete_remote_files: true
