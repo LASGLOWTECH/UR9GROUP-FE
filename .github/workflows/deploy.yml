@@ -39,6 +39,6 @@ jobs:
         
         # *** ACTION REQUIRED: REPLACE THIS WITH YOUR SERVER'S WEB ROOT PATH ***
         # Example: '/var/www/html/' or '/public_html/your-app/'
-        remote_path: '/public_html/'
+        remote_path: '/home/urgroupc'
         
         delete_remote_files: true
