@@ -82,7 +82,7 @@ function App() {
                 <Route path="/privacypols"> <Privacy />  </Route>
                 <Route path="/Ethics"> <Ethics />  </Route>
                 <Route path="/Blog"> <Blog />  </Route>
-                {/* <Route path="/blogdetails/:id"> <BlogDetail />  </Route> */}
+                {/* <Route path="/blogdetails/:id"> <BlogDetails />  </Route> */}
                 <Route path="/Projectlisting/:id"> <Prodetails /> </Route>
                 <Route path="/fullblogs/:id"> <FullBlogs /> </Route>
                 <Route path="/sustainability"> <Sustainability /> </Route>
