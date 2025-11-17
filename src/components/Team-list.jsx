@@ -93,13 +93,14 @@ const TeamList = [
         About: "Vitalis Emmanuel is a creative brand developer, project manager, and media expert with a passion for crafting powerful visual stories. As Head of Media at UR9 Group, he has led numerous branding and media projects, producing over 1,000 visuals for companies and organizations. A Computer Science graduate from Cross River State University of Technology, he is currently pursuing a Master's degree in Information Technology. Vitalis is also a movie director who has directed several brand stories, documentaries, and music videos showcasing his versatility and creative depth. A member of the Media Practitioners Association of Nigeria, he is skilled in digital marketing, PR, and multimedia production. With a consistent record of excellence and innovation, his mission is to strengthen UR9 Group's brand presence and position its diverse businesses as industry leaders."
     },
 
-    /* {
-        Avatar: "/placeholder.jpg",
+    {
+
+        Avatar: "/new/acct.JPG",
         Name: "Emeto Cynthia Onyinye",
         icon: "fas fa-star",
         Position: "Accountant, UR9 Group",
         About: "Emeto Cynthia Onyinye is a skilled and detail oriented accountant at UR9 Group, with a strong background in financial accounting, auditing, and data management. She holds a B.Sc. in Accounting from Imo State University and has gained valuable experience working as both a Financial Accountant and an Auditor in reputable organizations. Cynthia is proficient in using accounting software and data entry systems, which helps her maintain accurate financial records, support effective budgeting, and ensure compliance with organizational policies. She has a keen interest in taxation, finance, and business development, and plans to further her professional qualifications by pursuing certifications with the Institute of Chartered Accountants of Nigeria (ICAN) and the Chartered Institute of Taxation of Nigeria (CITN). Cynthia is passionate about promoting financial integrity, accountability, and helping organizations make sound financial decisions that drive growth and sustainability."
-    }, */
+    },
 
     {
 
