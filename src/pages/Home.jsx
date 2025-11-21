@@ -17,6 +17,7 @@ import 'aos/dist/aos.css';
 import Faq from '../components/faqs';
 import Ceo from '../components/ceo';
 import PDFDownload from '../components/mydownload';
+import MalikModal from '../components/MalikModal';
 
 const Home = () => {
 
@@ -117,6 +118,8 @@ const Home = () => {
 
 
             <div className=" Hero-secton" >
+
+                <MalikModal />
 
                 <LazyLoad height={200} offset={100}>
 

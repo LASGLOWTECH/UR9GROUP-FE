@@ -33,6 +33,12 @@ Banklog: "/axa-logo.png",
   BankName: "Zenith Bank",
  
 },
+{
+  id: 5,
+Banklog: "/new/elevator.jpg",
+  BankName: "EOPRIEX ELEVATOR",
+ 
+},
 
 
 ]

@@ -65,7 +65,12 @@ const Team = () => {
                                     className="w-100 h-100" 
                                     src={Teams.Avatar} 
                                     alt={Teams.Name}
-                                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                                    style={{ 
+                                       objectFit: 'cover', 
+                                       objectPosition: Teams.Avatar === '/new/fashion.jpg' ? 'center top' : 'center top',
+                                       transform: Teams.Avatar === '/new/fashion.jpg' ? 'scale(1.3)' : 'scale(1)',
+                                       transition: 'transform 0.3s ease'
+                                    }}
                                  />
                               </div>
 

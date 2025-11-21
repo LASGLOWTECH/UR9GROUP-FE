@@ -24,9 +24,9 @@ const Partners = () => {
 
 
             <div className=' pt-5 text-center '  >
-               <h5 className=" fw-bolder display-6 text-warning text-center pt-5 " style={{ color: '' }}>Our Banking Partners</h5>
+               <h5 className=" fw-bolder display-6 text-warning text-center pt-5 " style={{ color: '' }}>Our Partners</h5>
 
-               <p className=" pt-2  text-center  text-light pt-3" style={{ fontSize: '20px', color: 'white' }}>Our banking partners are</p>
+               <p className=" pt-2  text-center  text-light pt-3" style={{ fontSize: '20px', color: 'white' }}>Our partners are</p>
             </div>
 
 

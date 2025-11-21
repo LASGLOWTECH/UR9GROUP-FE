@@ -2,7 +2,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/new/ceo.jpg",
+        Avatar: "/new/boss.jpg",
         Name: "Hon.  Dr. Uriel Ezeh",
         icon: "fas fa-star",
         Position: "Group Managing Director",
@@ -65,7 +65,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/new/IMG_6501.JPG",
+        Avatar: "/new/fashion.jpg",
         Name: "Miss Anthonia E. Imana",
         icon: "fas fa-star",
         Position: "Fashion Supervisor",
@@ -95,7 +95,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/new/acct.JPG",
+        Avatar: "/new/account.png",
         Name: "Emeto Cynthia Onyinye",
         icon: "fas fa-star",
         Position: "Accountant, UR9 Group",
@@ -104,7 +104,7 @@ const TeamList = [
 
     {
 
-        Avatar: "/new/logistics.jpg",
+        Avatar: "/new/logistics.png",
         Name: "Simon Daniel E.",
         icon: "fas fa-star",
         Position: "Logistics Supervisor, UR9 Group",

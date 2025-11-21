@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import TawkToWidget from './components/tawkit';
 import './App.css';
 import Uriel from './pages/Aboutceo';
 import Ur9Lin from './pages/ur9lin';
@@ -96,9 +95,6 @@ function App() {
 
             </div>
             <ScrollTop />
-
-            <TawkToWidget />
-         
 
             <Footer />
 

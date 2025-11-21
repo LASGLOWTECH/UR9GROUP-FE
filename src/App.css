@@ -755,3 +755,22 @@ color:black}
   line-height: 1.5;
   list-style-type: disc;
 }
+
+/* Malik Modal Styles */
+.malik-modal .modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.malik-modal .modal-dialog {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.malik-modal .modal-body {
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
