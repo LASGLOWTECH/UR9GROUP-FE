@@ -5,8 +5,10 @@
   scroll-behavior: smooth;
   font-family: var(--Poppings);
   /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 *::-webkit-scrollbar {
@@ -17,8 +19,10 @@
 
 html {
   /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 html::-webkit-scrollbar {
@@ -28,9 +32,12 @@ html::-webkit-scrollbar {
 
 body {
   /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  overflow-y: scroll; /* Enable scrolling */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-y: scroll;
+  /* Enable scrolling */
 
   --primary-color: #15172f;
   --light-color1: #1f1e21;
@@ -44,6 +51,11 @@ body {
   --Lato: 'Lato', sans-serif;
   --Roboto: 'Roboto Condensed', sans-serif;
   --Montserat: 'Montserrat', sans-serif;
+
+  /* Hero Section Variables */
+  --hero-white: #ffffff;
+  --brand-red: #BB1E23;
+  --brand-blue: #15172f;
 }
 
 body::-webkit-scrollbar {
@@ -205,6 +217,16 @@ button.navbar-toggler:focus {
   opacity: 0.4;
   box-shadow: 2px #cabc1db3 3px floralwhite;
   transition: all 2s ease-in-out;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--gold) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.value-icon-container {
+  box-shadow: 0 0 20px rgba(227, 171, 19, 0.3);
 }
 
 h3 {
@@ -376,11 +398,13 @@ ul li {
     .Hero-text {
       font-size: 24px;
     }
-    .ceoimg{
+
+    .ceoimg {
       width: 200px;
-      margin:auto;
+      margin: auto;
       height: 200px;
     }
+
     .blocl {
       width: 100%;
       height: 400px;
@@ -624,12 +648,14 @@ ul li {
   background-repeat: no-repeat;
 
 }
-.ceopro{
+
+.ceopro {
 
   background: rgba(0, 0, 0, 0.98);
   background-blend-mode: darken;
 
 }
+
 .secimg {
 
   background: rgba(0, 0, 0, 0.4);
@@ -656,22 +682,29 @@ ul li {
 
 }
 
-.btn-custom{background-color:#E3AB13;
-color:black}
-.btn-custom:hover {
-  color: #ffffff; /* Text color on hover */
-  background-color: #000000; /* Background color on hover */
-  border-color: #000000b3; /* Border color on hover */
+.btn-custom {
+  background-color: #E3AB13;
+  color: black
 }
+
+.btn-custom:hover {
+  color: #ffffff;
+  /* Text color on hover */
+  background-color: #000000;
+  /* Background color on hover */
+  border-color: #000000b3;
+  /* Border color on hover */
+}
+
 .lin-h1 {
   font-size: 50px;
 }
 
 
-  @media (max-width:500px) {
-    .lin-h1 {
-      font-size: 30px;
-      color: #ddc125;
+@media (max-width:500px) {
+  .lin-h1 {
+    font-size: 30px;
+    color: #ddc125;
   }
 }
 
@@ -691,17 +724,17 @@ color:black}
   margin-top: 80px;
   color: gold;
   padding: 100px 0;
- 
+
 
 }
 
-.lin-h1::last-word{
-  color:#ddc125
+.lin-h1::last-word {
+  color: #ddc125
 }
 
-  /* Custom CSS for desktop mode */
-  @media (min-width: 768px) {
-    .textfield {
+/* Custom CSS for desktop mode */
+@media (min-width: 768px) {
+  .textfield {
     width: 600px;
     /* Adjust this width as needed */
     word-wrap: break-word;
@@ -731,7 +764,8 @@ color:black}
   align-items: center;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   position: relative;
 }
 
@@ -754,23 +788,4 @@ color:black}
   margin-bottom: 10px;
   line-height: 1.5;
   list-style-type: disc;
-}
-
-/* Malik Modal Styles */
-.malik-modal .modal-content {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.malik-modal .modal-dialog {
-  max-width: 90%;
-  margin: 2rem auto;
-}
-
-.malik-modal .modal-body {
-  padding: 0;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }

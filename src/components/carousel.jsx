@@ -1,130 +1,154 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import Services from './Services';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import {  BsArrowUpRightCircle } from 'react-icons/bs'
-
 
 const ImageSlider = () => {
+  const scrollContainerRef = useRef(null);
 
-  const [show, setShow] = useState(false)
+  const scroll = (direction) => {
+    if (scrollContainerRef.current) {
+      const { current } = scrollContainerRef;
+      const scrollAmount = current.clientWidth * 0.8;
+      const targetScroll = direction === 'left'
+        ? current.scrollLeft - scrollAmount
+        : current.scrollLeft + scrollAmount;
 
-
-
-
-
-
-  const handledisplay = (index) => {
-
-
-    if (show === index) {
-      return setShow(null)
-
-
-    }
-    setShow(index)
-  }
-
-
-  const handlehide = (index) => {
-
-setShow(!show)
-  }
-
-
-
-  //   const imgBackgrounds = {
-
-  //     backgroundSize: "cover",
-  //     backgroundPosition: "center",
-  //     backgroundRepeat: "no-repeat",
-  //     height: "100%",
-  //     width: "100%"
-  // }
-
-
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 1 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
+      current.scrollTo({
+        left: targetScroll,
+        behavior: 'smooth'
+      });
     }
   };
 
-
   return (
     <>
-      <section className='bg-dark'>
-        <div className=''>
-          <Carousel
+      <section className="bg-dark py-5 overflow-hidden">
+        <div className="container-fluid px-md-5 px-3 position-relative">
+          <div className="flex flex-col gap-6 mb-4 relative text-white">
+            <div className="d-flex flex-column align-items-start gap-2">
+              <h3 className="fw-bold display-6 text-white">
+                Our Businesses
+              </h3>
+              <div className="rounded-5 mb-4" style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
+            </div>
 
+            <p className="text-light opacity-75 max-w-3xl mb-5 fs-5">
+              We operate across various sectors, delivering excellence and luxury in every endeavor.
+            </p>
 
-            keyBoardControl={true}
-            customTransition="all 7s"
-            transitionDuration={2000}
-            responsive={responsive}
+            {/* Carousel Navigation Buttons (Top Right) */}
+            <div className="position-absolute top-0 end-0 d-none d-md-flex gap-2 pe-3">
+              <button
+                onClick={() => scroll('left')}
+                className="btn btn-outline-warning rounded-circle p-2 d-flex align-items-center justify-content-center"
+                style={{ width: '45px', height: '45px' }}
+                aria-label="Scroll left"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button
+                onClick={() => scroll('right')}
+                className="btn btn-outline-warning rounded-circle p-2 d-flex align-items-center justify-content-center"
+                style={{ width: '45px', height: '45px' }}
+                aria-label="Scroll right"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
 
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={2000}
-            //  autoPlay={responsive !== "mobile" ? true : false}
-            // style={{ backgroundImage: `url(${Services.sectionimg})`, height: "80vh", width: "auto" }}
+          {/* Carousel Container */}
+          <div
+            ref={scrollContainerRef}
+            className="d-flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-inline"
+            style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              scrollSnapType: 'x mandatory',
+              WebkitOverflowScrolling: 'touch'
+            }}
+          >
+            {Services.map((service, idx) => (
+              <div
+                key={idx}
+                className="flex-shrink-0"
+                style={{
+                  width: 'min(85vw, 400px)',
+                  scrollSnapAlign: 'start'
+                }}
+              >
+                <a href={service.link} className="text-decoration-none group">
+                  <div
+                    className="position-relative overflow-hidden rounded-4 bg-secondary shadow-lg"
+                    style={{ aspectRatio: '4/3' }}
+                  >
+                    <img
+                      src={service.sectionimg}
+                      alt={service.info}
+                      className="w-100 h-100 object-fit-cover transition-all duration-500 hover-scale"
+                      style={{ transition: 'transform 0.5s ease' }}
+                    />
+                    {/* Overlay */}
+                    <div className="position-absolute inset-0 bg-black opacity-0 hover-opacity-25 transition-opacity" />
 
-            containerClass="carousel-container ">
-
-            {/* backgroundImage:`url(${Services.symbol})` */}
-            {Services.map((Services, index) => {
-              return (
-
-                <div className="  " key={index} >
-                  <div className="d-flex  py-2  flex-row justify-content-center align-items-center " style={{ backgroundColor: "black" }}>
-                    <img src={Services.symbol} className='' alt='ur9 ' style={{ width: "50px" }}></img>
-                    <h5 className="  px-3 P-text fw-bold gold font-bold  ">
-                      {Services.info} </h5></div>
-                  <div className=' position-relative ' style={{height:""}} >
-
-                    {show === index ? (   <a style={{ textDecoration: "none" }} href={Services.link}> <div className='position-absolute   secimg  w-100 h-100 top-50 start-50 translate-middle  p-5 d-flex align-items-center justify-content-center py-5 ' style={{ zIndex: "1", transition: "all 2s" }} > 
-                 
-                    <BsArrowUpRightCircle className=' fs-1 display-1 gold    '  onMouseOut={() => handlehide(index)}/>
-                   </div> </a> ) : null
-                    }
-                    <img src={Services.sectionimg} className=' w-100' alt='ur9 ' style={{ height: "auto" }}   onMouseOver={() => handledisplay(index)} ></img>
-
-
-
+                    {/* Bottom Info Overlay */}
+                    <div className="position-absolute bottom-0 w-100 p-3 d-flex align-items-center gap-2"
+                      style={{ background: 'linear-gradient(transparent, rgba(0,0,0,0.8))' }}>
+                      <img src={service.symbol} alt="icon" style={{ width: '30px', height: '30px' }} />
+                      <span className="text-white fw-bold">{service.info}</span>
+                    </div>
                   </div>
 
+                  <div className="mt-3">
+                    <h4 className="fs-5 fw-bold text-warning mb-1">
+                      {service.Headertext}
+                    </h4>
+                    <p className="text-light opacity-50 small text-truncate-2">
+                      {service.Textinfo.substring(0, 100)}...
+                    </p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
 
-                </div>
-              )
-            })}
-
-
-
-
-
-
-
-
-
-
-          </Carousel>
+          {/* Mobile Navigation Buttons (Bottom) */}
+          <div className="d-flex d-md-none justify-content-center gap-4 mt-4">
+            <button
+              onClick={() => scroll('left')}
+              className="btn btn-warning rounded-circle p-3 shadow-sm"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button
+              onClick={() => scroll('right')}
+              className="btn btn-warning rounded-circle p-3 shadow-sm"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .text-truncate-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      `}} />
     </>
-  )
-}
+  );
+};
 
 export default ImageSlider;

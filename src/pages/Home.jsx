@@ -7,17 +7,16 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row';
 import Details from "../components/Details";
-import Homesliders from '../components/Homesliders';
+import HeroSection from '../components/HeroSection';
 import AboutHero from '../components/Aboutlist';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 // import Popup from './popup';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Faq from '../components/faqs';
 import Ceo from '../components/ceo';
 import PDFDownload from '../components/mydownload';
-import MalikModal from '../components/MalikModal';
+import ValueCard from '../components/ValueCard';
+
 
 const Home = () => {
 
@@ -68,11 +67,7 @@ const Home = () => {
 
 
     useEffect(() => {
-        setInterval(() => {
-            AOS.init({ duration: 2000 });
-
-        }, 1000);
-
+        // Reduced animation logic
     }, []);
 
     // const handleNext = () => {
@@ -100,10 +95,7 @@ const Home = () => {
     }, 20 * 1000);
 
     useEffect(() => {
-        AOS.init({ duration: 2000 });
-
-
-
+        // Removed AOS init
     }, []);
 
     return (
@@ -119,11 +111,9 @@ const Home = () => {
 
             <div className=" Hero-secton" >
 
-                <MalikModal />
-
                 <LazyLoad height={200} offset={100}>
 
-                    <Homesliders />
+                    <HeroSection />
 
                 </LazyLoad>
 
@@ -167,25 +157,23 @@ const Home = () => {
                                 <div className='  mx-auto  rounded-5    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
 
-                                <div className="  "><p className="   textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal mx-auto " >  Our core values help is to provide our clients
+                                <div className="  "><p className="   textfield px-2 pt-6 text-light text-center text-wrap  shadow-sm font-normal mx-auto " >  Our core values help us to provide our clients
                                     with the best possible experience</p></div>
 
                             </div>
                         </div>
 
 
-                        <div className="row  p-4 " style={{ backgroundColor: "black", borderRadius: "30px" }}>
-                            {/* <div className="col-lg-4 flex-column  d-flex align-items-center  py-5 "> */}
+                        <div className="row g-4 p-2 p-md-4 rounded-4 mt-2">
 
-                            {Details.map(details => (
-                                <div className="col-lg-4 flex-column ur9-values  d-flex align-items-center  py-3" key={details.id} data-aos="zoom-in-up">
-                                    <div className=" p-1  gold2 image4">
-                                        <img className="  w-50  " src={details.image} alt="heroimg"></img>
-
-                                    </div>
-                                    <h4 className="text-center py-4 fw-bold">{details.Tag}</h4>
-                                    <p className="P-text value-text text-center fs-6">{details.info}</p>
-                                </div>
+                            {Details.map((details, index) => (
+                                <ValueCard
+                                    key={details.id}
+                                    index={index}
+                                    image={details.image}
+                                    title={details.Tag}
+                                    info={details.info}
+                                />
                             ))}
 
                         </div>
@@ -209,19 +197,6 @@ const Home = () => {
 
                 <div className="About-section " id="About-section" style={{ backgroundColor: '#DADDE4' }} >
 
-                    <Container className='px-2'>
-
-
-
-                        <div className='pt-5 ' data-aos="slide-right">
-                            <h3 className=' one pt-3 pb display-7 text-left '>Our Businesses</h3>
-                            <div className='    rounded-5    mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
-                            <h3 className='text-dark pb-5 display-6 fw-bold fs-1 '>We operate across various Sectors</h3>
-
-                        </div>
-
-                    </Container>
-
 
                     <LazyLoad height={200} offset={100}>
 
@@ -239,7 +214,7 @@ const Home = () => {
                 <Container className='px-2 my-5 '>
 
                     {/* About us */}
-                    <h3 className='text-dark display-7 fw-bold' data-aos="slide-right  ">Who We are</h3>
+                    <h3 className='text-dark display-7 fw-bold'>Who We are</h3>
                     <div className='       mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
                 </Container>
 
@@ -313,7 +288,7 @@ const Home = () => {
 
 
 
-                        <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec ' data-aos="fade-out"
+                        <div className='w-100  position-relative secimg d-flex align-items-center flex-column justify-content-center h-sec '
                             style={{
                                 backgroundImage: "url(/Palawa2.png",
                                 backgroundPosition: "center",
@@ -327,7 +302,7 @@ const Home = () => {
 
 
 
-                            <h2 className='display-7 text-light fw-bold px-4  text-center ' data-aos="slide-right ">
+                            <h2 className='display-7 text-light fw-bold px-4  text-center '>
                                 Do You Want to Become A  Real Estate Affiliate?
                             </h2>
 
@@ -355,7 +330,7 @@ const Home = () => {
                 <section className='py-5 '>
 
                     <Container>
-                        <h3 className='text-dark display-7 fw-bold' data-aos="slide-right  ">Latest events</h3>
+                        <h3 className='text-dark display-7 fw-bold'>Latest events</h3>
                         <div className='       mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
                         <Row className='d-flex align-items-center  justify-content-center '>
@@ -363,19 +338,17 @@ const Home = () => {
                                 <Link className="fs-3" to="/Blog" style={{ textDecoration: "none", }}>
 
                                     <div className='w-inherit   h- d-flex align-items-center flex-column justify-content-center  rounded-l h-sec'
-
-                                        data-aos="fade-out"
                                         style={{
-                                     
 
-                                        backgroundImage: "url(/newmarsh.jpg)",
-                                        height: "80vh",
-                                        objectFit: "cover",
-                                        borderBottomRightRadius: "",
-                                          backgroundRepeat: "no-repeat",
-                                        backgroundSize: "cover",
-                                        backgroundPosition: "center"
-                                          
+
+                                            backgroundImage: "url(/newmarsh.jpg)",
+                                            height: "80vh",
+                                            objectFit: "cover",
+                                            borderBottomRightRadius: "",
+                                            backgroundRepeat: "no-repeat",
+                                            backgroundSize: "cover",
+                                            backgroundPosition: "center"
+
                                         }}>
 
                                         <h3 className='P-text rounded-3 text-dark py-2  px-4 bg-warning fs-4 fw-medium'>UR9 Updates</h3>
@@ -394,7 +367,7 @@ const Home = () => {
                             </Col>
 
                             <Col lg={6} md={6} >
-                                <div className='py-4 ' data-aos="slide-up">
+                                <div className='py-4 '>
                                     <div className='       mb-4 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
 
                                     <h3 className='fw-bold '>Why you Should Choose UR9</h3>

@@ -65,7 +65,7 @@ const Footer = () => {
                         <div className="d-flex flex-row justify-content-start ">
                             <span className="span"><i class="text-warning fa fa-phone aria-hidden=true"></i></span>
 
-                            <p className="text-light px-2 ">+234 817-147-6946</p>
+                            <p className="text-light px-2 ">07012025252</p>
 
 
 
@@ -74,7 +74,7 @@ const Footer = () => {
                         <div className="d-flex flex-row justify-content-start ">
                             <span className="span"><i class="text-warning fa fa-envelope aria-hidden=true"></i></span>
 
-                            <p className="text-light px-2 ">info@ur9group.com</p>
+                            <p className="text-light px-2 ">ur9groupltd@gmail.com</p>
 
 
                         </div>
