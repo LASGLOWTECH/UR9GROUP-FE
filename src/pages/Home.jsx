@@ -267,12 +267,6 @@ const Home = () => {
                     {/* end of about us */}
 
 
-                    <div className='pt-5 ' data-aos="slide-right">
-                        <h3 className=' one pt-3 pb display-7 text-left '>UR9 Academy</h3>
-                        <div className='    rounded-5    mb-3 ' style={{ width: "100px", height: '3px', backgroundColor: "gold" }}></div>
-                        <h3 className='text-dark pb-5 display-6 fw-medium '>Where dreams take root and opportunities blossom</h3>
-
-                    </div>
 
                 </Container>
 
